@@ -41,6 +41,6 @@ Donde:
 
 - **YourApyKey** => Corresponde con el valor del ApiKey entregado a su entidad a través del correo electrónico de forma privada y segura.
 
-- **YourApiSecret** => Corresponde con el valor del ApiSecret ([valor altamente entrópico](https://es.wikipedia.org/wiki/Entrop%C3%ADa_(computaci%C3%B3n))) entregado a su entidad a través del correo electrónico de forma privada y segura.
+- **YourApiSecret** => Corresponde con el valor del ApiSecret ([una cadena altamente entrópica](https://es.wikipedia.org/wiki/Entrop%C3%ADa_(computaci%C3%B3n))) entregado a su entidad a través del correo electrónico de forma privada y segura.
 
 
