@@ -6,12 +6,5 @@ repo_url: https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs
 pages:
 - Introducción: Quickstart.md
 - URL del servicio: Hosting.md
-- Conectar con Aspen:
-  - ApiKey + ApiSecret: ManageApiKey.md
+- Conectar con Aspen: ManageApiKey.md
   - Asegurar una clave API: SecuringApiKey.md
-  - IAppIdentity: IAppIdentity.md
-  - AppConfigIdentity : AppConfigIdentity.md
-  - EnvironmentIdentity: EnvironmentIdentity.md
-  - RegistryIdentity: RegistryIdentity.md
-  - SecureIdentity: SecureIdentity.md
-  - HardCodeIdentity: HardCodeIdentity.md
