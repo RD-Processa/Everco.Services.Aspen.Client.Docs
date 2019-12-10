@@ -14,10 +14,10 @@ El valor de la variable **ASPEN:SERVICE_TIMEOUT** debería corresponder con la f
 Tambien puede utilizar el constructor de la clase para personalizar el nombre de las variables de ambiente. Por ejemplo:
 
 ```c#
-var provider = new EnvironmentEndpointProvider("MyVAR1", "MyVAR2");
+var provider = new EnvironmentEndpointProvider("My_Var_Url", "My_Var_Timeout");
 ```
 
-Para este caso se buscaran las varibles de ambiente `MyVAR1` y `MyVAR2` para asociar los valores con la Url del servicio y el tiempo de espera respectivamente. Luego, [registre la instancia para ser utilizada como extensión](ServiceLocator.md).
+Para este caso se buscaran las varibles de ambiente `My_Var_Url` y `My_Var_Timeout` para asociar los valores con la Url del servicio y el tiempo de espera respectivamente. Luego, [registre la instancia para ser utilizada como extensión](ServiceLocator.md).
 
 ## Vea también
 
