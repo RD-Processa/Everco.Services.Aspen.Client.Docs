@@ -8,8 +8,16 @@ El valor de la variable **ASPEN:SERVICE_TIMEOUT** debería corresponder con la f
 
 <div class="admonition warning">
    <p class="first admonition-title">Atención</p>
-   <p class="last">Recuerde que los valores establecidos para una variable de sesión solo se procesan al iniciar el proceso del sistema operativo, así que cualquier cambio en una variable de entorno solo será `visble` hasta que se reinicie el proceso.</p>
+   <p class="last">Recuerde que los valores establecidos para una variable de sesión solo se procesan al iniciar el proceso del sistema operativo, así que cualquier cambio en una variable de entorno solo será <i>visible</i> hasta que se reinicie el proceso.</p>
 </div>
+
+Tambien puede utilizar el constructor de la clase para personalizar el nombre de las variables de ambiente. Por ejemplo:
+
+```c#
+var provider = new EnvironmentEndpointProvider("MyVAR1", "MyVAR2");
+```
+
+Para este caso se buscaran las varibles de ambiente `MyVAR1` y `MyVAR2` para asociar los valores con la Url del servicio y el tiempo de espera respectivamente. Luego, [registre la instancia para ser utilizada como extensión](ServiceLocator.md).
 
 ## Vea también
 
