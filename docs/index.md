@@ -11,3 +11,5 @@ var client =  AutonomousApp.Initialize()
 	.Authenticate()
 	.GetClient();
 ```
+
+[Ir a la guia rápida de uso](Quickstart.md)
