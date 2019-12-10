@@ -4,5 +4,5 @@ Como se mencionó anteriormente, este valor corresponde con la URL de la instanc
 
 <div class="admonition info">
    <p class="first admonition-title">Nota</p>
-   <p class="last">Por defecto, el cliente de Aspen utiliza la clase <a href="EnvironmentEndpointProvider.md">EnvironmentEndpointProvider</a> para obtener el valor de la URL a donde se debe conectar.</p>
+   <p class="last">Por defecto, el cliente de Aspen utiliza la clase <a href="./EnvironmentEndpointProvider.md">EnvironmentEndpointProvider</a> para obtener el valor de la URL a donde se debe conectar.</p>
 </div>
