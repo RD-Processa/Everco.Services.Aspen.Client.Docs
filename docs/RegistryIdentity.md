@@ -18,9 +18,8 @@ Para este caso se buscaran las entradas `MyApiKey` y `MyApiSecret` en el registr
  
 - [EnvironmentIdentity](EnvironmentIdentity.md)
 
-- [AppConfigIdentity](AppConfigIdentity.md)
+- [RegistryIdentity](RegistryIdentity.md)
 
 - [HardCodeIdentity](HardCodeIdentity.md)
 
 - [SecureIdentity](SecureIdentity.md)
-
