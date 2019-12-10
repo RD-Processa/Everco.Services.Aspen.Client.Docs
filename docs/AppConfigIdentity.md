@@ -19,11 +19,10 @@ Suponga un archivo XML de configuración con el siguiente texto:
 Tambien puede utilizar el constructor de la clase para personalizar el nombre de las entradas de configuración. Por ejemplo:
 
 ```c#
-var provider = new AppConfigIdentity("My_ApiKey", "My_ApiSecret");
+var identity = new AppConfigIdentity("My_ApiKey", "My_ApiSecret");
 ```
 
 Para este caso se buscaran las entradas `My_ApiKey` y `My_ApiSecret`para asociar los valores con el ApiKey y el ApiSecret respectivamente. Luego, [registre la instancia para ser utilizada como extensión](ServiceLocator.md).
-
 
 ## Vea también
  
@@ -34,4 +33,3 @@ Para este caso se buscaran las entradas `My_ApiKey` y `My_ApiSecret`para asociar
 - [HardCodeIdentity](HardCodeIdentity.md)
 
 - [SecureIdentity](SecureIdentity.md)
-

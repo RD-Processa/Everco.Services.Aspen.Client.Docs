@@ -9,7 +9,7 @@ Obtiene la información que se utiliza para autenticar la solicitud en el servic
 Tambien puede utilizar el constructor de la clase para personalizar el nombre de las entradas de configuración. Por ejemplo:
 
 ```c#
-var provider = new RegistryIdentity(RegistryRoot.LocalMachine, "SOFTWARE\Aspen\Credentials", "MyApiKey", "MyApiSecret");
+var identity = new RegistryIdentity(RegistryRoot.LocalMachine, "SOFTWARE\Aspen\Credentials", "MyApiKey", "MyApiSecret");
 ```
 
 Para este caso se buscaran las entradas `MyApiKey` y `MyApiSecret` en el registro de Windows bajo la clave `HKEY_LOCAL_MACHINE\SOFTWARE\Aspen\Credentials` para asociar los valores con el ApiKey y el ApiSecret respectivamente. Luego, [registre la instancia para ser utilizada como extensión](ServiceLocator.md).

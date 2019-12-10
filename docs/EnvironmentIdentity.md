@@ -10,7 +10,7 @@ Obtiene la información que se utiliza para autenticar la solicitud en el servic
 Tambien puede utilizar el constructor de la clase para personalizar el nombre de las variables de ambiente. Por ejemplo:
 
 ```c#
-var provider = new EnvironmentIdentity("My_Var_ApiKey", "My_Var_ApiSecret");
+var identity = new EnvironmentIdentity("My_Var_ApiKey", "My_Var_ApiSecret");
 ```
 
 Para este caso se buscaran las varibles de ambiente `My_Var_ApiKey` y `My_Var_ApiSecret` para asociar los valores con el ApiKey y el ApiSecret respectivamente. Luego, [registre la instancia para ser utilizada como extensión](ServiceLocator.md).
