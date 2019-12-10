@@ -7,6 +7,7 @@ El valor de la variable **ASPEN:SERVICE_URL** debería tener la [forma de una UR
 El valor de la variable **ASPEN:SERVICE_TIMEOUT** debería corresponder con la forma `[ws][-]{ d | [d.]hh:mm[:ss[.ff]] }[ws]` como se describe [aquí](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.parse). Por ejemplo, para especificar una espera de máximo 15 segundos en cada solicitud, el valor a configurar sería `00:00:15`.
 
 ## Archivo de ejemplo
+
 Suponga un archivo XML de configuración con el siguiente texto:
 
 ```xml
