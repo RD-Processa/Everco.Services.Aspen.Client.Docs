@@ -8,9 +8,17 @@ Como se mencionó anteriormente, este valor corresponde con la URL de la instanc
 </div>
 
 ## [IEndpointProvider](IEndpointProvider.md)
+ 
+ - Define la Url base del servicio Aspen con el que se requiere conectar y el tiempo de espera para las respuestas.
 
 ## [EnvironmentEndpointProvider](EnvironmentEndpointProvider.md)
 
+- Obtiene la Url base del servicio Aspen con el que se requiere conectar y el tiempo de espera para las respuestas desde [variables de ambiente](https://docs.microsoft.com/en-us/dotnet/api/system.environment).
+
 ## [RegistryEndpointProvider](RegistryEndpointProvider.md)
 
+- Obtiene la Url base del servicio Aspen con el que se requiere conectar y el tiempo de espera para las respuestas a partir de la configuración en el [registro de Windows](https://docs.microsoft.com/en-us/dotnet/api/microsoft.win32.registry).
+
 ## [AppConfigEndpointProvider](AppConfigEndpointProvider.md)
+
+- Obtiene la Url base del servicio Aspen con el que se requiere conectar y el tiempo de espera para las respuestas a partir de las entradas de configuración en una sección appSettings de un [archivo de configuración en formato XML](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/index).
