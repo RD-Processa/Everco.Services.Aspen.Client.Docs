@@ -12,6 +12,6 @@ pages:
   - IAppIdentity: IAppIdentity.md
   - AppConfigIdentity : AppConfigIdentity.md
   - EnvironmentIdentity: EnvironmentIdentity.md
-  - RegistryIdentity RegistryIdentity.md
+  - RegistryIdentity: RegistryIdentity.md
   - SecureIdentity: SecureIdentity.md
   - HardCodeIdentity: HardCodeIdentity.md
