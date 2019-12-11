@@ -4,7 +4,7 @@ Obtiene la información que se utiliza para autenticar la solicitud en el servic
 
 ## Ejemplo de la entrada en el registro de Windows
 
-![RegistryEndpointProvider](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/RegistryEndpointProvider.png?raw=true)
+![RegistryEndpoint](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/RegistryEndpointProvider.png?raw=true)
 
 Tambien puede utilizar el constructor de la clase para personalizar el nombre de las entradas de configuración. Por ejemplo:
 
