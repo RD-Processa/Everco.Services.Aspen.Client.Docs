@@ -48,3 +48,4 @@ var client = AutonomousApp.Initialize()
 
 A través de la variable `client` podrá acceder a los módulos del servicio Aspen como veremos más adelante.
 
+![IntelliSense](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/IntelliSense.png?raw=true)
