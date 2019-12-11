@@ -40,9 +40,11 @@ El cliente de Aspen define la interfaz IAppIdentity e implementa las clases Envi
 Para obtener una instancia de la clase que representa la conexión con el servicio Aspen, basta con invocar el método GetClient(). El cliente de Aspen se encargará de solicitar un token de autenticación con las credenciales proporcionadas y lo almacenará en una Cache interna para su uso posterior.
 
 ```c#
-var client =  AutonomousApp.Initialize()
-	.RoutingTo("YourUrl")
-	.WithIdentity("YourApyKey", "YourApiSecret")
-	.Authenticate()
-	.GetClient();
+var client = AutonomousApp.Initialize()
+   .WithDefaults()
+   .Authenticate()
+   .GetClient();
 ```
+
+A través de la variable `client` podrá acceder a los módulos del servicio Aspen como veremos más adelante.
+
