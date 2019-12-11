@@ -19,6 +19,12 @@ var identity = SecureIdentity.FromFile(fileName);
 
  Para asociar los valores del ApiKey y el ApiSecret [registre la instancia para ser utilizada como extensión](ServiceLocator.md).
 
+<div class="admonition warning">
+   <p class="first admonition-title">Atención</p>
+   <p class="last">Los datos protegidos están asociados con el contexto de la máquina donde se guardaron. Cualquier proceso que se ejecute en la computadora puede desproteger estos datos, por lo que este archivo dejará de funcionar si se lleva o intenta utilizar desde otra máquina.</p>
+</div>
+
+
 ## Vea también
 
 - [EnvironmentIdentity](EnvironmentIdentity.md)
