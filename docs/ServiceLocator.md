@@ -1,11 +1,14 @@
-## Reemplazando componentes en tiempo de ejecución a través de ServiceLocator.
+## Reemplazando componentes
 
-La clase ServiceLocator tiene como objetivo facilitar la modularidad de la aplicación eliminando las dependencias entre implementaciones. Las interfaces son una de las herramientas más flexibles y potentes para desacoplar los componentes de software y mejorar la capacidad de mantenimiento del código. El patrón del localizador de servicios es una opción para evitar las dependencias, al actuar como un registro central que proporciona implementaciones de diferentes interfaces. Al hacerlo, los componentes que usan una interfaz ya no necesitan conocer la clase que implementa la interfaz. En lugar de crear una instancia de cada clase, se obtiene una implementación a través del localizador de servicios, que actúa como el registrador único para todos los servicios que se utilizan en la aplicación. Como siempre en la ingeniería de software, no hay balas de plata por lo que el uso de este patrón tiene tanto apoyo como rechazo en la comunidad. 
-Para acceder a la instancia actual de ServiceLocator, se utiliza la propiedad estática Instance y a partir de esta instancia se pueden establecer valores para cada componente en tiempo de ejecución.  
+La clase ServiceLocator tiene como objetivo facilitar la modularidad de la aplicación eliminando las dependencias entre implementaciones. Las interfaces son una de las herramientas más flexibles y potentes para desacoplar los componentes de software y mejorar la capacidad de mantenimiento del código. El patrón del localizador de servicios es una opción para evitar las dependencias, al actuar como un registro central que proporciona implementaciones de diferentes interfaces. Al hacerlo, los componentes que usan una interfaz ya no necesitan conocer la clase que implementa la interfaz. En lugar de crear una instancia de cada clase, se obtiene una implementación a través del localizador de servicios, que actúa como el registrador único para todos los servicios que se utilizan en la aplicación.
 
-Por ejemplo, para establecer la instancia de configuración para el descubrimiento de la Url del servicio Aspen, puede utilizar el método SetDefaultEndpoint que recibe como parámetro la instancia de una clase que implemente la interfaz IEndpointProvider. 
+Como siempre en la ingeniería de software, no hay balas de plata por lo que el uso de este patrón tiene apoyo y rechazo en la comunidad.
 
-## Veamos un ejemplo:
+Para acceder a la instancia actual de `ServiceLocator`, se utiliza la propiedad estática `Instance` y a partir de esta instancia se pueden establecer valores para cada componente en tiempo de ejecución.  
+
+Por ejemplo, para establecer la instancia de configuración para el descubrimiento de la Url del servicio Aspen, puede utilizar el método `SetDefaultEndpoint` que recibe como parámetro la instancia de una clase que implemente la interfaz `IEndpointProvider`.
+
+## Veamos un ejemplo
 
 ```c#
 // Establece que se utilice una instancia de RegistryEndpoint para obtener la configuración de conexión con el servicio Aspen.
