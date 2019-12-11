@@ -8,3 +8,6 @@ pages:
 - URL del servicio: Hosting.md
 - Conectar con Aspen: ManageApiKey.md
 - Asegurar una clave API: SecuringApiKey.md
+- Instalación: Install.md
+- Token de autenticación: AuthToken.md
+- Capturando excepciones: AspenException.md
