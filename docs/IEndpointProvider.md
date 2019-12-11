@@ -16,8 +16,8 @@ Donde:
 
 ## Vea también
 
-- [RegistryEndpointProvider](RegistryEndpointProvider.md)
+- [RegistryEndpoint](RegistryEndpoint.md)
 
-- [EnvironmentEndpointProvider](EnvironmentEndpointProvider.md)
+- [EnvironmentEndpoint](EnvironmentEndpointmd)
 
-- [AppConfigEndpointProvider](AppConfigEndpointProvider.md)
+- [AppConfigEndpoint](AppConfigEndpoint.md)

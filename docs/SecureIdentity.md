@@ -5,7 +5,7 @@ Obtiene la información que se utiliza para autenticar la solicitud en el servic
 ## ¿Cómo generar el archivo y cifrar su información?
 
 ```c#
- var identity = new SecureIdentity("YourApiKey", "YourApiSecret");
+var identity = new SecureIdentity("YourApiKey", "YourApiSecret");
 string fileName = @"C:\Temp\MySecureFile.bin";
 identity.Encrypt().SaveTo(fileName)
 ```
@@ -19,8 +19,8 @@ var identity = SecureIdentity.FromFile(fileName);
 
  Para asociar los valores del ApiKey y el ApiSecret [registre la instancia para ser utilizada como extensión](ServiceLocator.md).
 
- ## Vea también
- 
+## Vea también
+
 - [EnvironmentIdentity](EnvironmentIdentity.md)
 
 - [RegistryIdentity](RegistryIdentity.md)
