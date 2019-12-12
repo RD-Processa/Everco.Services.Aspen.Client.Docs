@@ -8,12 +8,11 @@ Dado que identifican al proyecto que las usa, las claves de API permiten que la 
 
 El cliente de Aspen define la interfaz IAppIdentity e implementa las clases EnvironmentIdentity, RegistryIdentity, AppConfigIdentity, HardCodeIdentity y SecureIdentity para tal fin. Si ninguna de estas clases satisface sus necesidades, podría hacer su propia implementación de la interfaz IAppIdentity y reemplazar el componente en tiempo de ejecución.
 
-<div class="admonition info">
-   <p class="first admonition-title">Nota</p>
+<div class="admonition tip">
+   <p class="first admonition-title">Tip</p>
    <p class="last">Por defecto, el cliente de Aspen utiliza la clase <a href="../EnvironmentIdentity">EnvironmentIdentity</a> para obtener el valor de las credenciales de conexión.</p>
+   <p class="last">Puede utilizar cualquiera de las clases que se mencionan a continuación para definir los valores que utilizará el cliente de Aspen.</p>
 </div>
-
-> Puede utilizar cualquiera de las clases que se mencionan a continuación para definir los valores que utilizará el cliente de Aspen.
 
 ## [IAppIdentity](IAppIdentity.md)
 
