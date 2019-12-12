@@ -1,28 +1,11 @@
-# Operaciones habilitadas en el cliente de Aspens
+# Operaciones habilitadas en el cliente de Aspen
 
-Ahora conozcamos las operaciones soportadas por el cliente de ASPEN. Hemos ordenado por módulos las funcionalidades que pueden ser aprovechadas por su proyecto/aplicación asi:
+Ahora conozcamos las operaciones soportadas por el cliente de Aspen. Hemos ordenado por módulos las funcionalidades que pueden ser aprovechadas por su proyecto/aplicación asi:
 
 ## Configuraciones
 
 Comprende a las operaciones soportadas para acceder a entidades de información relacionadas con parametrización del sistema, como son los tipos de documentos conocidos, tipos de transacción y valores de configuración disponibles para usar en su proyecto/aplicación.
 
-### Tipos de documentos
-
-Los tipos de documento soportados para la aplicación.
-
-```c#
-var client = AutonomousApp.Initialize()
-	.RoutingTo("YourUrl")
-	.WithIdentity("YourApiKey", "YourApiSecret")
-	.AuthenticateNoCache()
-	.GetClient();
-
-client.Settings.GetDocTypes();
-```
-
-El resultado de la consulta será una lista de elementos representados por la entidad `DocTypeInfo` asi:
-
-![Preview](../images/SettingsDocTypesExample.png)
 
 ### Operadores de telefonía móvil
 
