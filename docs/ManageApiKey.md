@@ -33,7 +33,7 @@ El cliente de Aspen define la interfaz IAppIdentity e implementa las clases Envi
 
 ## [HardCodeIdentity](HardCodeIdentity.md)
 
-- Obtiene la información que se utiliza para autenticar la solicitud en el servicio Aspen a partir de los valores proporcionados en el constructor de la clase. NO SE RECOMIENDA EL USO DE ESTA CLASE. Se provee solo con fines de pruebas de concepto.
+- Obtiene la información que se utiliza para autenticar la solicitud en el servicio Aspen a partir de los valores proporcionados en el constructor de la clase. **`NO SE RECOMIENDA EL USO DE ESTA CLASE`**. Se provee solo con fines de pruebas de concepto.
 
 ## [SecureIdentity](SecureIdentity.md)
 
