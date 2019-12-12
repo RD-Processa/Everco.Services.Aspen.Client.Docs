@@ -15,3 +15,4 @@ pages:
   - Generalidades:  ModulesAndFeatures.md
   - Módulo de configuraciones: SettingsModule.md
   - Módulo de administración: ManagementModule.md
+  - Módulo de consultas financieras: InquiriesModule.md
