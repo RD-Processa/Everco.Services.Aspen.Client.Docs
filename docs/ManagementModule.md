@@ -2,11 +2,9 @@
 
 Comprende las operaciones soportadas para proporcionar y gestionar la información relacionada con un usuario/tarjetahabiente/cliente.
 
-## Administración de cuentas para transferencias
+## Consultar las cuentas registradas
 
-### Consultar las cuentas registradas de un usuario/tarjetahabiente/cliente
-
-Obtiene la información de las cuentas registradas por un usuario para transferencia de saldos.
+Obtiene la información de las cuentas registradas por un usuario/tarjetahabiente/cliente para transferencia de saldos.
 
 ```c#
 // Este código se debería ejecutar una sola vez y conservar la referencia a la instancia del cliente.
@@ -26,11 +24,11 @@ El resultado de la consulta será una lista de elementos representados por la en
 
 ![Preview](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/ManagementTransferAccountsExample.png?raw=true)
 
-### Registrar una cuenta para transferencias
+## Registrar una cuenta para transferencias
 
 Vincula la información de una cuenta de un tarjetahabiente a la lista de cuentas registradas para transferencia de fondos de un usuario.
 
-#### Utilizando el número de cuenta a registrar
+### Utilizando el número de cuenta a registrar
 
 ```c#
 // Información del usuario que registra la cuenta.
@@ -60,7 +58,7 @@ var client = AutonomousApp.Initialize()
 client.Management.LinkTransferAccount(userDocType, userDocNumber, linkTransferAccountInfo);
 ```
 
-#### Utilizando el número de documento asociado con la cuenta a registrar
+### Utilizando el número de documento asociado con la cuenta a registrar
 
 ```c#
 // Información del usuario que registra la cuenta.
@@ -80,9 +78,9 @@ var client = AutonomousApp.Initialize()
 client.Management.LinkTransferAccount(userDocType, userDocNumber, cardHolderDocType, cardHolderDocNumber);
 ``` 
 
-### Eliminar una cuenta registrada
+## Eliminar una cuenta registrada
 
-#### Utilizando el alias del registro
+### Utilizando el alias del registro
 
 Desvincula la información de una cuenta de la lista de cuentas registradas para transferencias de un cliente, usando el alias asociado en el momento del registro:
 
@@ -104,7 +102,7 @@ var client = AutonomousApp.Initialize()
 client.Management.UnlinkTransferAccount(userDocType, userDocNumber, accountAlias);
 ```
 
-#### Usando la información del titular de la cuenta registrada
+### Usando la información del titular de la cuenta registrada
 
 Utilizando el número de documento asociado con la cuenta registrada.
 
