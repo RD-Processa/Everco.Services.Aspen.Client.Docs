@@ -28,11 +28,13 @@ El cliente de Aspen admite la personalización de opciones comúnmente utilizada
 
 
 ```c#
+
+// Este código se debería ejecutar una sola vez y conservar la referencia a la instancia del cliente.
 var client =  AutonomousApp.Initialize()
-	.RoutingTo("YourUrl")
-	.WithIdentity("YourApiKey", "YourApiSecret")
-	.Authenticate()
-	.GetClient();
+  .RoutingTo("YourUrl")
+  .WithIdentity("YourApiKey", "YourApiSecret")
+  .Authenticate()
+  .GetClient();
 ```
 
 Donde:

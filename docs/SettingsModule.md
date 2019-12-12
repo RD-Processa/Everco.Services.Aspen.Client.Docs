@@ -7,6 +7,7 @@ Comprende las operaciones soportadas para acceder a las entidades de informació
 Obtiene la lista de tipos de documento reconocidos por el sistema Aspen.
 
 ```c#
+// Este código se debería ejecutar una sola vez y conservar la referencia a la instancia del cliente.
 var client = AutonomousApp.Initialize()
   .WithDefaults()
   .Authenticate()
@@ -21,9 +22,10 @@ El resultado de la consulta será una lista de elementos representados por la en
 
 ## Operadores de telefonía móvil
 
-Un operador o proveedor de telefonía móvil es una compañía que proporciona servicios para los usuarios de teléfonos móviles. El servicio de ASPEN facilita esta información para operaciones de recarga a celular.
+Un operador o proveedor de telefonía móvil es una compañía que proporciona servicios para los usuarios de teléfonos móviles. El servicio de Aspen facilita esta información para operaciones de recarga a celular.
 
 ```c#
+// Este código se debería ejecutar una sola vez y conservar la referencia a la instancia del cliente.
 var client = AutonomousApp.Initialize()
   .WithDefaults()
   .Authenticate()
@@ -41,6 +43,7 @@ El resultado de la consulta será una lista de elementos representados por la en
 Por cada operador de telefonía configurado, se dispone de los valores permitidos para realizar recargas a celular. Si los valores no se ajustan a los que su proyecto/aplicación requiere, puede solicitar la personalización o configuración de nuevos valores.
 
 ```c#
+// Este código se debería ejecutar una sola vez y conservar la referencia a la instancia del cliente.
 var client = AutonomousApp.Initialize()
   .WithDefaults()
   .Authenticate()
@@ -58,6 +61,7 @@ El resultado de la consulta será una lista de elementos representados por la en
 Son los tipos de operaciones financieras soportadas para su aplicación.
 
 ```c#
+// Este código se debería ejecutar una sola vez y conservar la referencia a la instancia del cliente.
 var client = AutonomousApp.Initialize()
   .WithDefaults()
   .Authenticate()
@@ -75,6 +79,7 @@ El resultado de la consulta será una lista de elementos representados por la en
 Son los tipos de pagos que se pueden realizar a una cuenta y que están soportados para la aplicación.
 
 ```c#
+// Este código se debería ejecutar una sola vez y conservar la referencia a la instancia del cliente.
 var client = AutonomousApp.Initialize()
   .WithDefaults()
   .Authenticate()
