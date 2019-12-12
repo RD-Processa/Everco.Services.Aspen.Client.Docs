@@ -14,3 +14,4 @@ pages:
 - Módulos del servicio: 
   - Generalidades:  ModulesAndFeatures.md
   - Módulo de configuraciones: SettingsModule.md
+  - Módulo de administración: ManagementModule.md
