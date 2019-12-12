@@ -11,14 +11,16 @@ El cliente de Aspen define la interfaz IAppIdentity e implementa las clases Envi
    <p class="last">Por defecto, el cliente de Aspen utiliza la clase <a href="../EnvironmentIdentity">EnvironmentIdentity</a> para obtener el valor de las credenciales de conexión.</p>
 </div>
 
+## Clases que puede utilizar para establecer la configuración de ApiKey/ApiSecret
+
 ## [IAppIdentity](IAppIdentity.md)
 
--  Define la información de identidad de una aplicación para autenticar las solicitudes al servicio Aspen.
+- Define la información de identidad de una aplicación para autenticar las solicitudes al servicio Aspen.
 
 ## [EnvironmentIdentity](EnvironmentIdentity.md)
 
 - Obtiene la información que se utiliza para autenticar la solicitud en el servicio Aspen a partir de variables de ambiente del sistema.
- 
+
 ## [RegistryIdentity](RegistryIdentity.md)
 
 - Obtiene la información que se utiliza para autenticar la solicitud en el servicio Aspen a partir de la configuración en el registro de Windows.
