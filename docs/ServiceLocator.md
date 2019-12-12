@@ -1,4 +1,4 @@
-## Reemplazando componentes
+# Uso de ServiceLocator
 
 La clase `ServiceLocator` tiene como objetivo facilitar la modularidad de la aplicación eliminando las dependencias entre implementaciones. Las interfaces son una de las herramientas más flexibles y potentes para desacoplar los componentes de software y mejorar la capacidad de mantenimiento del código. El patrón del localizador de servicios es una opción para evitar las dependencias, al actuar como un registro central que proporciona implementaciones de diferentes interfaces. Al hacerlo, los componentes que usan una interfaz ya no necesitan conocer la clase que implementa la interfaz. En lugar de crear una instancia de cada clase, se obtiene una implementación a través del localizador de servicios, que actúa como el registrador único para todos los servicios que se utilizan en la aplicación.
 
