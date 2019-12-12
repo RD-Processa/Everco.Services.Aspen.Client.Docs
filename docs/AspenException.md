@@ -20,6 +20,8 @@ catch(AspenException exception)
 
 El resultado esperado debería ser una excepción de tipo `AspenException` ya que los valores que identifican a la aplicación, no son reconocidos por el sistema.
 
+![AspenExceptionExample](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/AspenExceptionExample.png?raw=true)
+
 Accediendo a la variable `exception` podrá obtener los detalles del problema, así:
 
 | Propiedad | Descripción |
