@@ -51,3 +51,15 @@ var client = AutonomousApp.Initialize()
 A través de la variable `client` podrá acceder a los módulos del servicio Aspen como veremos más adelante.
 
 ![IntelliSense](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/IntelliSense.png?raw=true)
+
+## ¿Como puedo acceder al token de autenticación?
+
+Cuando se crea una instancia del cliente utilizando la sintaxis anterior, el cliente se encargará de agregar las cabeceras de autenticación requeridas, agregar la información solicitada por el servicio (como el Nonce y el Epoch), serializar la solicitud en formato JSON/JWT y procesar la respuesta. Si necesita acceder al token de autenticación generado, puede utilizar la propiedad `AuthToken` de la variable `client` que tiene tres importante valores.
+
+| Propiedad | Descripción |
+| :-:|---|
+| **ExpiresAt** | Fecha y hora en que expira el token de auteniticación. |
+| **IssueAt** | Fecha y hora en que se emitió el token de auteniticación. |
+| **Token** | Cadena que representa el token de autenticación. |
+
+![AuthToken](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/AuthToken.png?raw=true)
