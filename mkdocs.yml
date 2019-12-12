@@ -16,3 +16,4 @@ pages:
   - Módulo de configuraciones: SettingsModule.md
   - Módulo de administración: ManagementModule.md
   - Módulo de consultas financieras: InquiriesModule.md
+  - Módulo de operaciones dinámicas: DynamicsModule.md
