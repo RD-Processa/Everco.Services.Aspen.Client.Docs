@@ -1,8 +1,8 @@
 # Token de autenticación
 
-Para evitar que en cada llamada al servicio de ASPEN se deba entregar su **ApiKey** y **ApiSecret** se usa un token de autenticación, que no es más que una cadena de texto larga y encriptada con una clave. Luego de realizar la autenticación, el ASPEN devuelve al cliente un token que usará para futuros accesos y así certificar que está autenticado.
+Para evitar que en cada llamada al servicio de ASPEN se deba entregar su **ApiKey** y **ApiSecret** se usa un token de autenticación, que no es más que una cadena de texto larga y encriptada que se entrega en respuesta de la autenticación del servicio de ASPEN. Esta cadena contiene el token que usará para futuros accesos y así certificar que su proyecto/aplicación está autenticado para usar recursos del servicio.
 
-De forma predeterminada, el cliente de ASPEN almacena en caché el token de autenticación emitido para el proyecto/aplicación y así reutilizarlo con las operaciones que requiera su proyecto/aplicación mientas este vigente.
+De forma predeterminada, el cliente de ASPEN almacena en memoria el token de autenticación emitido para el proyecto/aplicación y así reutilizarlo con las siguientes operaciones mientras este vigente.
 
 ### Usar el cliente con token almacenado en caché
 
