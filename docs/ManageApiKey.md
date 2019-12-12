@@ -11,7 +11,7 @@ El cliente de Aspen define la interfaz IAppIdentity e implementa las clases Envi
 <div class="admonition tip">
    <p class="first admonition-title">Tip</p>
    <p class="last">Por defecto, el cliente de Aspen utiliza la clase <a href="../EnvironmentIdentity">EnvironmentIdentity</a> para obtener el valor de las credenciales de conexión.</p>
-   <p>&nbsp;</p>
+   <br/>
    <p class="last">Puede utilizar cualquiera de las clases que se mencionan a continuación para definir los valores que utilizará el cliente de Aspen.</p>
 </div>
 

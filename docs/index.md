@@ -12,7 +12,7 @@ var client =  AutonomousApp.Initialize()
 	.GetClient();
 ```
 
-<p>&nbsp;</p>
+<br/>
 
 <a href="Quickstart" class="btn btn-neutral float-right" title="Guia rápida">Ir a la guia rápida de uso <span class="icon icon-circle-arrow-right"></span></a>
 
