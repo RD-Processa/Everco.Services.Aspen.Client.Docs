@@ -19,7 +19,7 @@ El resultado de la consulta será una lista de elementos representados por la en
 
 ![AccountInfo](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/InquiriesAccountsExample.png?raw=true)
 
-### Propiedades de una cuenta (List\<AccountProperty\>)
+### Propiedades de una cuenta (List<AccountProperty>)
 
 Es un conjunto de propiedades o atributos que representan información relevante de la cuenta.
 

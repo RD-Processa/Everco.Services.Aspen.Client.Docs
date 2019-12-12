@@ -6,7 +6,7 @@ Una operación dinámica en el servicio ASPEN, representa un endpoint de tipo RE
 
 ```c#
 client.Dynamics.Get("")
-``` 
+```
 
 ## POST
 
