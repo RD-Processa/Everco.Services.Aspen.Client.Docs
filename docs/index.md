@@ -1,4 +1,4 @@
-# Índice
+# Introducción
 
 El cliente de Aspen es una librería que facilita la conexión con el servicio [Aspen](https://processa-aspen.readthedocs.io/) de Evertec Colombia.
 
@@ -12,4 +12,4 @@ var client =  AutonomousApp.Initialize()
 	.GetClient();
 ```
 
-[Ir a la guia rápida de uso](Quickstart.md)
+<a href="../Quickstart" class="btn btn-neutral float-right" title="URL del servicio">Ir a la guia rápida de uso<span class="icon icon-circle-arrow-right"></span></a>

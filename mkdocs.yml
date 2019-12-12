@@ -4,7 +4,7 @@ repo_url: https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs
 
 
 pages:
-- Introducción: Quickstart.md
+- Descripción general: Quickstart.md
 - URL del servicio: Hosting.md
 - Conectar con Aspen: ManageApiKey.md
 - Asegurar una clave API: SecuringApiKey.md
