@@ -1,4 +1,4 @@
-# AppConfigEndpointProvider
+# AppConfigEndpoint
 
 Obtiene la Url base del servicio Aspen con el que se requiere conectar y el tiempo de espera para las respuestas a partir de las entradas en una sección appSettings de un archivo de configuración XML.
 
@@ -23,7 +23,7 @@ Suponga un archivo XML de configuración con el siguiente texto:
 Tambien puede utilizar el constructor de la clase para personalizar el nombre de las entradas de configuración. Por ejemplo:
 
 ```c#
-var provider = new AppConfigEndpointProvider("My_Key_Url", "My_Key_Timeout");
+var provider = new AppConfigEndpoint("My_Key_Url", "My_Key_Timeout");
 ```
 
 Para este caso se buscaran las entradas `My_Key_Url` y `My_Key_Timeout` para asociar los valores con la Url del servicio y el tiempo de espera respectivamente. Luego, [registre la instancia para ser utilizada como extensión](ServiceLocator.md).
@@ -32,6 +32,6 @@ Para este caso se buscaran las entradas `My_Key_Url` y `My_Key_Timeout` para aso
 
 - [IEndpointProvider](IEndpointProvider.md)
 
-- [RegistryEndpointProvider](RegistryEndpointProvider.md)
+- [RegistryEndpoint](RegistryEndpoint.md)
 
-- [EnvironmentEndpointProvider](EnvironmentEndpointProvider.md)
+- [EnvironmentEndpoint](EnvironmentEndpoint.md)

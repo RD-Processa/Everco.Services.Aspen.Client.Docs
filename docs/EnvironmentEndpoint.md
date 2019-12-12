@@ -1,4 +1,4 @@
-# EnvironmentEndpointProvider
+# EnvironmentEndpoint
 
 Obtiene la Url base del servicio Aspen con el que se requiere conectar y el tiempo de espera para las respuestas desde las variables de ambiente con el nombre **ASPEN:SERVICE_URL** y **ASPEN:SERVICE_TIMEOUT**
 
@@ -14,7 +14,7 @@ El valor de la variable **ASPEN:SERVICE_TIMEOUT** debería corresponder con la f
 Tambien puede utilizar el constructor de la clase para personalizar el nombre de las variables de ambiente. Por ejemplo:
 
 ```c#
-var provider = new EnvironmentEndpointProvider("My_Var_Url", "My_Var_Timeout");
+var provider = new EnvironmentEndpoint("My_Var_Url", "My_Var_Timeout");
 ```
 
 Para este caso se buscaran las varibles de ambiente `My_Var_Url` y `My_Var_Timeout` para asociar los valores con la Url del servicio y el tiempo de espera respectivamente. Luego, [registre la instancia para ser utilizada como extensión](ServiceLocator.md).
@@ -23,6 +23,6 @@ Para este caso se buscaran las varibles de ambiente `My_Var_Url` y `My_Var_Timeo
 
 - [IEndpointProvider](IEndpointProvider.md)
 
-- [RegistryEndpointProvider](RegistryEndpointProvider.md)
+- [RegistryEndpoint](RegistryEndpoint.md)
 
-- [AppConfigEndpointProvider](AppConfigEndpointProvider.md)
+- [AppConfigEndpoint](AppConfigEndpoint.md)
