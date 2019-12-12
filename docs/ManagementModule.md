@@ -102,7 +102,7 @@ var client = AutonomousApp.Initialize()
 client.Management.UnlinkTransferAccount(userDocType, userDocNumber, accountAlias);
 ```
 
-### Usando la información del titular de la cuenta registrada
+### Utilizando la información del titular de la cuenta registrada
 
 Utilizando el número de documento asociado con la cuenta registrada.
 
