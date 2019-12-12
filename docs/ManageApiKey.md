@@ -54,7 +54,11 @@ A través de la variable `client` podrá acceder a los módulos del servicio Asp
 
 ## ¿Cómo puedo acceder al token de autenticación?
 
-Cuando se crea una instancia del cliente utilizando la sintaxis anterior, el cliente se encargará de agregar las cabeceras de autenticación requeridas, agregar la información solicitada por el servicio (como el Nonce y el Epoch), serializar la solicitud en formato JSON/JWT y procesar la respuesta. Si necesita acceder al token de autenticación generado, puede utilizar la propiedad `AuthToken` de la variable `client` que tiene tres importante valores.
+Para evitar que en cada llamada al servicio de Aspen deba entregar su **ApiKey** y **ApiSecret**, se usa un token de autenticación, que no es más que una cadena de texto larga y cifrada que se entrega en respuesta de la autenticación del servicio Aspen. Esta cadena contiene el token que podrá utilizar para futuros accesos y así certificar que su proyecto/aplicación está autenticado contra el servicio Aspen.
+
+De forma predeterminada, el cliente de Aspen almacena en memoria el token de autenticación emitido para el proyecto/aplicación y así reutilizarlo con las siguientes operaciones mientras este vigente.
+
+Cuando se crea una instancia del cliente utilizando la sintaxis anterior, el cliente se encargará de agregar las cabeceras de autenticación requeridas, agregar la información solicitada por el servicio (como el Nonce y el Epoch), serializar la solicitud en formato JSON/JWT, procesar la respuesta y almacenar el token de autenticación en cache. Si necesita acceder al token generado, puede utilizar la propiedad `AuthToken` de la variable `client` que tiene tres importante propiedades.
 
 | Propiedad | Descripción |
 | :-:|---|
@@ -63,3 +67,14 @@ Cuando se crea una instancia del cliente utilizando la sintaxis anterior, el cli
 | **Token** | Cadena que representa el token de autenticación. |
 
 ![AuthToken](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/AuthToken.png?raw=true)
+
+## Usar el cliente ignorando el token de autentiación en cache
+
+Al ignorar los valores del token de autenticación almacenado en memoria, el cliente de Aspen solicitará nuevos tokens de autenticación por cada operación que requiera su proyecto/aplicación, pero esto debe ser un factor de rendimiento para poner en consideración. El método `AuthenticateNoCache` es el que debe utilizar si toma la decisión de ignorar el token de autenticación en cache \(**no recomendado**\).
+
+```c#
+var client = AutonomousApp.Initialize()
+   .WithDefaults()
+   .AuthenticateNoCache()
+   .GetClient();
+```
