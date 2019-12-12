@@ -6,7 +6,7 @@ Su motivación principal es permitir  a los desarrolladores crear una aplicació
 
 ```c#
 var client =  AutonomousApp.Initialize()
-	.RoutingTo("YourUrl")
+	.RoutingTo("https://locahost")
 	.WithIdentity("YourApyKey", "YourApiSecret")
 	.Authenticate()
 	.GetClient();
