@@ -32,3 +32,4 @@ El mismo principio aplica para los componentes del sistema que se mencionan en l
 | **RegisterPayloadClaimsManager**  | Establece la instancia que se debe utilizar para establecer las reclamaciones que se utilizan en la carga útil (Payload) de una solicitud hacia el servicio Aspen.  | **DefaultPayloadClaimsManager**|
 | **RegisterRequestHeaderNames**  | Establece la instancia que se debe utilizar para establecer los nombres que se utilizan en las cabeceras personalizadas de las solicitudes hacia el servicio Aspen. | **DefaultHeaderElement** |
 | **RegisterWebProxy** | Establece la instancia que se debe utilizar para establecer la configuración del servidor Proxy que se utiliza para establecer la comunicación hacia el servicio Aspen   | **NullWebProxy** |
+| **Reset** | Reestablece la configuración a sus valores predeterminados | **No aplica** |
