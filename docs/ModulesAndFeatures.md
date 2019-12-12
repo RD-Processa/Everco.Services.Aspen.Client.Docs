@@ -7,53 +7,7 @@ Ahora conozcamos las operaciones soportadas por el cliente de Aspen. Hemos orden
 Comprende a las operaciones soportadas para acceder a entidades de información relacionadas con parametrización del sistema, como son los tipos de documentos conocidos, tipos de transacción y valores de configuración disponibles para usar en su proyecto/aplicación.
 
 
-### Operadores de telefonía móvil
 
-Un operador o proveedor de telefonía móvil es una compañía que proporciona servicios para los usuarios de teléfonos móviles. El servicio de ASPEN facilita esta información para operaciones de recarga a celular.
-
-```c#
-client.Settings.GetCarriers();
-```
-
-El resultado de la consulta será una lista de elementos representados por la entidad `CarrierInfo` asi:
-
-![Preview](../images/SettingsCarriersExample.png)
-
-### Valores admitidos de recarga por operador
-
-Por cada operador de telefonía configurado, se dispone de los valores permitidos para realizar recargas a celular. Si los valores no se ajustan a los que su proyecto/aplicación requiere, puede solicitar la personalización o configuración de nuevos valores. 
-
-```c#
-client.Settings.GetTopUpValues();
-```
-
-El resultado de la consulta será una lista de elementos representados por la entidad `TopUpInfo` asi:
-
-![Preview](../images/SettingsTopUpValuesExample.png)
-
-### Tipos de transacción
-
-Son los tipos de operaciones financieras soportadas para su aplicación.
-
-```c#
-client.Settings.GetTranTypes();
-```
-
-El resultado de la consulta será una lista de elementos representados por la entidad `TranTypeInfo` asi:
-
-![Preview](../images/SettingsTranTypesExample.png)
-
-### Tipos de pagos
-
-Son los tipos de pagos que se pueden realizar a una cuenta y que están soportados para la aplicación.
-
-```c#
-client.Settings.GetPaymentTypes();
-```
-
-El resultado de la consulta será una lista de elementos representados por la entidad `PaymentTypeInfo` asi:
-
-![Preview](../images/SettingsPaymentTypesExample.png)
 
 ## Administración
 
