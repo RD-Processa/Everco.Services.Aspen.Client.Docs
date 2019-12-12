@@ -8,7 +8,7 @@ Para acceder a la instancia actual de `ServiceLocator`, se utiliza la propiedad 
 
 Por ejemplo, para establecer la instancia de configuración para el descubrimiento de la Url del servicio Aspen, puede utilizar el método `SetDefaultEndpoint` que recibe como parámetro la instancia de una clase que implemente la interfaz `IEndpointProvider`.
 
-![ServiceLocator](../images/ServiceLocator.png)
+![ServiceLocator](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/ServiceLocator.png?raw=true)
 
 ## Veamos un ejemplo
 
