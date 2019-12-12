@@ -12,4 +12,4 @@ pages:
 - Capturando excepciones: AspenException.md
 - Reemplazar componentes: ServiceLocator.md
 - Módulos del servicio: ModulesAndFeatures.md
-    Módulo de configuraciones: SettingsModule.md
+  - Módulo de configuraciones: SettingsModule.md
