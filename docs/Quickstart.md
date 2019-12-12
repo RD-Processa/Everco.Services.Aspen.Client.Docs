@@ -30,7 +30,7 @@ El cliente de Aspen admite la personalización de opciones comúnmente utilizada
 ```c#
 var client =  AutonomousApp.Initialize()
 	.RoutingTo("YourUrl")
-	.WithIdentity("YourApyKey", "YourApiSecret")
+	.WithIdentity("YourApiKey", "YourApiSecret")
 	.Authenticate()
 	.GetClient();
 ```
@@ -39,7 +39,7 @@ Donde:
 
 - **YourUrl** => Corresponde con la URL del servicio a donde desea conectar (puede variar entre ambientes QA/Dev/Prod). Por ejemplo: https://dev.aspen.com/api (esta URL no es real). Variará entre ambientes y dependerá en gran parte de la forma como se conecta con nuestros servicios (a través de una red pública, VPN, WAN, LAN, etc)
 
-- **YourApyKey** => Corresponde con el valor del ApiKey entregado a su entidad a través del correo electrónico de forma privada y segura.
+- **YourApiKey** => Corresponde con el valor del ApiKey entregado a su entidad a través del correo electrónico de forma privada y segura.
 
 - **YourApiSecret** => Corresponde con el valor del ApiSecret ([valor altamente entrópico](https://es.wikipedia.org/wiki/Entrop%C3%ADa_(computaci%C3%B3n))) entregado a su entidad a través del correo electrónico de forma privada y segura.
 

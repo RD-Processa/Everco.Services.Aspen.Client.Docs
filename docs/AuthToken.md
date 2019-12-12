@@ -11,7 +11,7 @@ Para inicializar un cliente de ASPEN que conserve en memoria la información del
 ```c#
 var client = AutonomousApp.Initialize()
 	.RoutingTo("YourUrl")
-	.WithIdentity("YourApyKey", "YourApiSecret")
+	.WithIdentity("YourApiKey", "YourApiSecret")
 	.Authenticate()
 	.GetClient();
 
@@ -29,7 +29,7 @@ Antes de inicializar un cliente de ASPEN use la funcionalidad: `AuthenticateNoCa
 ```c#
 var client = AutonomousApp.Initialize()
 	.RoutingTo("YourUrl")
-	.WithIdentity("YourApyKey", "YourApiSecret")
+	.WithIdentity("YourApiKey", "YourApiSecret")
 	.AuthenticateNoCache()
 	.GetClient();
 ``` 
