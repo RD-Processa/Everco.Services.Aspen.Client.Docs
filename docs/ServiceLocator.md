@@ -21,15 +21,15 @@ El mismo principio aplica para los componentes del sistema que se mencionan en l
 
 | Operación/Método  | Descripción  | Valor predeterminado |
 |:-:|---|:-:|
-| :guilabel:`SetDefaultEndpoint`  | Establece la instancia de configuración que se debe utilizar para el descubrimiento de la Url y el tiempo de espera del servicio Aspen.  | **`EnvironmentEndpoint`** |
-| :guilabel:`SetDefaultIdentity`  | Establece la instancia de configuración que se debe utilizar para el descubrimiento de las credenciales de conexión que se envían en las cabeceras de autenticación.  | **`EnvironmentIdentity`** |
-| :guilabel:`RegisterEpochGenerator`   | Establece la instancia que se debe utilizar para generar las marcas de tiempo Unix que se requieren en cada petición que se envía al servicio Aspen.  | **`UnixEpochGenerator`** |
-| :guilabel:`RegisterHeadersManager`  |  Establece la instancia que se debe utilizar para establecer las cabeceras personalizadas requeridas por el servicio Aspen. | **`DefaultHeadersManager`** |
-| :guilabel:`RegisterJwtJsonSerializer`  | Establece la instancia que se debe utilizar para serializar la información enviada y generada para las solicitudes hacia/desde el servicio Aspen.  | **`JsonSerializer`** |
-| :guilabel:`RegisterLoggingProvider`  | Establece la instancia que se debe utilizar para escribir la información de seguimiento (logging) generada localmente por la librería.  | **`NullLoggingProvider`** |
-| :guilabel:`RegisterNonceGenerator`  |  Establece la instancia que se debe utilizar para generar números o cadenas aleatorias de un único uso. | **`GuidNonceGenerator`** |
-| :guilabel:`RegisterPayloadClaimNames`  | Establece la instancia que se debe utilizar para establecer los nombres de las reclamaciones que se utilizan en la carga útil (Payload) de una solicitud hacia el servicio Aspen.  | **`DefaultPayloadClaimElement`** |
-| :guilabel:`RegisterPayloadClaimsManager`  | Establece la instancia que se debe utilizar para establecer las reclamaciones que se utilizan en la carga útil (Payload) de una solicitud hacia el servicio Aspen.  | **`DefaultPayloadClaimsManager`**|
-| :guilabel:`RegisterRequestHeaderNames`  | Establece la instancia que se debe utilizar para establecer los nombres que se utilizan en las cabeceras personalizadas de las solicitudes hacia el servicio Aspen. | **`DefaultHeaderElement`** |
-| :guilabel:`RegisterWebProxy` | Establece la instancia que se debe utilizar para establecer la configuración del servidor Proxy que se utiliza para establecer la comunicación hacia el servicio Aspen   | **`NullWebProxy`** |
-| :guilabel:`Reset` | Reestablece la configuración a sus valores predeterminados | **`No aplica`** |
+| `SetDefaultEndpoint`  | Establece la instancia de configuración que se debe utilizar para el descubrimiento de la Url y el tiempo de espera del servicio Aspen.  | `EnvironmentEndpoint` |
+| `SetDefaultIdentity`  | Establece la instancia de configuración que se debe utilizar para el descubrimiento de las credenciales de conexión que se envían en las cabeceras de autenticación.  | `EnvironmentIdentity` |
+| `RegisterEpochGenerator`   | Establece la instancia que se debe utilizar para generar las marcas de tiempo Unix que se requieren en cada petición que se envía al servicio Aspen.  | `UnixEpochGenerator` |
+| `RegisterHeadersManager`  |  Establece la instancia que se debe utilizar para establecer las cabeceras personalizadas requeridas por el servicio Aspen. | `DefaultHeadersManager` |
+| `RegisterJwtJsonSerializer`  | Establece la instancia que se debe utilizar para serializar la información enviada y generada para las solicitudes hacia/desde el servicio Aspen.  | `JsonSerializer` |
+| `RegisterLoggingProvider`  | Establece la instancia que se debe utilizar para escribir la información de seguimiento (logging) generada localmente por la librería.  | `NullLoggingProvider` |
+| `RegisterNonceGenerator`  |  Establece la instancia que se debe utilizar para generar números o cadenas aleatorias de un único uso. | `GuidNonceGenerator` |
+| `RegisterPayloadClaimNames`  | Establece la instancia que se debe utilizar para establecer los nombres de las reclamaciones que se utilizan en la carga útil (Payload) de una solicitud hacia el servicio Aspen.  | `DefaultPayloadClaimElement` |
+| `RegisterPayloadClaimsManager`  | Establece la instancia que se debe utilizar para establecer las reclamaciones que se utilizan en la carga útil (Payload) de una solicitud hacia el servicio Aspen.  | `DefaultPayloadClaimsManager` |
+| `RegisterRequestHeaderNames`  | Establece la instancia que se debe utilizar para establecer los nombres que se utilizan en las cabeceras personalizadas de las solicitudes hacia el servicio Aspen. | `DefaultHeaderElement` |
+| `RegisterWebProxy` | Establece la instancia que se debe utilizar para establecer la configuración del servidor Proxy que se utiliza para establecer la comunicación hacia el servicio Aspen   | `NullWebProxy` |
+| `Reset` | Reestablece la configuración a sus valores predeterminados | `No aplica` |

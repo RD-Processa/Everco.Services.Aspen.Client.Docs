@@ -5,6 +5,7 @@ La URL del servicio, corresponde con la instancia del servicio a donde desea con
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
 <p class="last">Por defecto, el cliente de Aspen utiliza la clase <a href="../EnvironmentEndpoint">EnvironmentEndpoint</a> para obtener el valor de la URL a donde se debe conectar.</p>
+<p>&nbsp;</p>
 <p class="last">Puede utilizar cualquiera de las clases que se mencionan a continuación para definir los valores que utilizará el cliente de Aspen.</p>
 </div>
 
