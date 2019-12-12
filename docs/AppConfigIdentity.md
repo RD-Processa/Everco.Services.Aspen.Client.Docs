@@ -32,4 +32,4 @@ Para este caso se buscaran las entradas `My_ApiKey` y `My_ApiSecret`para asociar
 
 - [HardCodeIdentity](HardCodeIdentity.md)
 
-- [SecureIdentity](SecureIdentity.md)
+- [SecureFileIdentity](SecureFileIdentity.md)

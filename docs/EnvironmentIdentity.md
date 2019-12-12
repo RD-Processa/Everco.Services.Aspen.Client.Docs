@@ -23,4 +23,4 @@ Para este caso se buscaran las varibles de ambiente `My_Var_ApiKey` y `My_Var_Ap
 
 - [HardCodeIdentity](HardCodeIdentity.md)
 
-- [SecureIdentity](SecureIdentity.md)
+- [SecureFileIdentity](SecureFileIdentity.md)

@@ -22,4 +22,4 @@ Para este caso se buscaran las entradas `MyApiKey` y `MyApiSecret` en el registr
 
 - [HardCodeIdentity](HardCodeIdentity.md)
 
-- [SecureIdentity](SecureIdentity.md)
+- [SecureFileIdentity](SecureFileIdentity.md)

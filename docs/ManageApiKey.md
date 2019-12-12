@@ -6,7 +6,7 @@ Las claves de API identifican al proyecto (la aplicación o el sitio) que realiz
 
 Dado que identifican al proyecto que las usa, las claves de API permiten que la información se asocie con ese proyecto y que se rechace llamadas de otros proyectos que no tienen acceso o que no se habilitaron para el uso de la API o de la operación (método) en la API.
 
-El cliente de Aspen define la interfaz IAppIdentity e implementa las clases EnvironmentIdentity, RegistryIdentity, AppConfigIdentity, HardCodeIdentity y SecureIdentity para tal fin. Si ninguna de estas clases satisface sus necesidades, podría hacer su propia implementación de la interfaz IAppIdentity y reemplazar el componente en tiempo de ejecución.
+El cliente de Aspen define la interfaz IAppIdentity e implementa las clases [EnvironmentIdentity](EnvironmentIdentity.md), [RegistryIdentity](RegistryIdentity.md), [AppConfigIdentity](AppConfigIdentity.md), [HardCodeIdentity](HardCodeIdentity.md) y [SecureFileIdentity](SecureFileIdentity.md) para tal fin. Si ninguna de estas clases satisface sus necesidades, podría hacer su propia implementación de la interfaz [IAppIdentity](IAppIdentity.md) y reemplazar el componente en tiempo de ejecución.
 
 <div class="admonition tip">
    <p class="first admonition-title">Tip</p>
@@ -35,7 +35,7 @@ El cliente de Aspen define la interfaz IAppIdentity e implementa las clases Envi
 
 - Obtiene la información que se utiliza para autenticar la solicitud en el servicio Aspen a partir de los valores proporcionados en el constructor de la clase. **`NO SE RECOMIENDA EL USO DE ESTA CLASE`**. Se provee solo con fines de pruebas de concepto.
 
-## [SecureIdentity](SecureIdentity.md)
+## [SecureFileIdentity](SecureFileIdentity.md)
 
 - Obtiene la información que se utiliza para autenticar la solicitud en el servicio Aspen a partir de un archivo de texto cifrado.
 

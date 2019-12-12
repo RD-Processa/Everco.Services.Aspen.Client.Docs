@@ -25,4 +25,4 @@ Para este caso se utilizaran los valores proporcionados en el constructor de la 
 
 - [RegistryIdentity](RegistryIdentity.md)
 
-- [SecureIdentity](SecureIdentity.md)
+- [SecureFileIdentity](SecureFileIdentity.md)

@@ -1,11 +1,11 @@
-# SecureIdentity
+# SecureFileIdentity
 
 Obtiene la información que se utiliza para autenticar la solicitud en el servicio Aspen a partir de un archivo de texto cifrado donde previamente se han ingresdado las credenciales de acceso.
 
 ## ¿Cómo generar el archivo y cifrar su información?
 
 ```c#
-var identity = new SecureIdentity("YourApiKey", "YourApiSecret");
+var identity = new SecureFileIdentity("YourApiKey", "YourApiSecret");
 string fileName = @"C:\Temp\MySecureFile.bin";
 identity.Encrypt().SaveTo(fileName)
 ```
@@ -14,7 +14,7 @@ identity.Encrypt().SaveTo(fileName)
 
 ```c#
 string fileName = @"C:\Temp\MySecureFile.bin";
-var identity = SecureIdentity.FromFile(fileName);
+var identity = SecureFileIdentity.FromFile(fileName);
 ```
 
  Para asociar los valores del ApiKey y el ApiSecret [registre la instancia para ser utilizada como extensión](ServiceLocator.md).
