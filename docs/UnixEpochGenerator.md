@@ -25,5 +25,5 @@ También podria hacer su propia implementación de la interfaz `IEpochGenerator`
 MyEpochGenerator.cs
 
 ```c#
-var epoch = new MyEpochGenerator();
+ServiceLocator.Instance.RegisterEpochGenerator(new MyEpochGenerator());
 ```

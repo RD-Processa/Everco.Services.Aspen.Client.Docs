@@ -22,7 +22,7 @@ El mismo principio aplica para los componentes del sistema que se mencionan en l
 | `SetDefaultEndpoint`  | Establece la instancia de configuración que se debe utilizar para el descubrimiento de la Url y el tiempo de espera del servicio Aspen.  | [`EnvironmentEndpoint`](EnvironmentEndpoint.md) |
 | `SetDefaultIdentity`  | Establece la instancia de configuración que se debe utilizar para el descubrimiento de las credenciales de conexión que se envían en las cabeceras de autenticación.  | [`EnvironmentIdentity`](EnvironmentIdentity.md) |
 | `RegisterEpochGenerator`   | Establece la instancia que se debe utilizar para generar las marcas de tiempo Unix que se requieren en cada petición que se envía al servicio Aspen.  | [`UnixEpochGenerator`](UnixEpochGenerator.md) |
-| `RegisterHeadersManager`  |  Establece la instancia que se debe utilizar para agregar las cabeceras personalizadas requeridas por el servicio Aspen. | `DefaultHeadersManager` |
+| `RegisterHeadersManager`  |  Establece la instancia que se debe utilizar para agregar las cabeceras personalizadas requeridas por el servicio Aspen. | [`DefaultHeadersManager`](DefaultHeadersManager.md) |
 | `RegisterJwtJsonSerializer`  | Establece la instancia que se debe utilizar para serializar la información enviada y generada para las solicitudes hacia/desde el servicio Aspen.  | `JsonSerializer` |
 | `RegisterLoggingProvider`  | Establece la instancia que se debe utilizar para escribir la información de seguimiento (logging) generada localmente por la librería.  | `NullLoggingProvider` |
 | `RegisterNonceGenerator`  |  Establece la instancia que se debe utilizar para generar números o cadenas aleatorias de un único uso. | `GuidNonceGenerator` |
