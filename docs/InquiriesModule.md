@@ -29,6 +29,12 @@ Label | Nombre o etiqueta para visualizar el contenido del atributo en la interf
 Key | Identificador interno del atributo.
 Value | Valor asociado con el atributo.
 
+
+
+
+
+
+
 <div class="admonition warning">
    <p class="first admonition-title">Atención</p>
    <p class="last">El conjunto de propiedades o atributos de una cuenta variará de acuerdo con el sistema de información origen del producto.</p>

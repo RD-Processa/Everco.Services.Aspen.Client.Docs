@@ -11,7 +11,7 @@ pages:
 - Asegurar una clave API: SecuringApiKey.md
 - Capturando excepciones: AspenException.md
 - Reemplazar componentes: ServiceLocator.md
-- Módulos del servicio: 
++ Módulos del servicio: 
   - Generalidades:  ModulesAndFeatures.md
   - Módulo de configuraciones: SettingsModule.md
   - Módulo de administración: ManagementModule.md

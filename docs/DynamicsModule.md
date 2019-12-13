@@ -30,25 +30,6 @@ public class Person
   public int Number { get; set; }
 }
 ```
-
-.. tabs::
-
-.. tab:: Create
-
-xxx
-
-.. tab:: Read
-
-zzzzz
-
-.. tab:: Update
-
-eede
-
-.. tab:: Delete
-
-xxxx
-
 ### Agregar una persona a través del método POST
 
 Supongamos que para esta operación se requieren los valores de `LastName`, `FirstName` y `Number`. Podríamos invocar la operación así:
