@@ -1,5 +1,3 @@
-# Módulo de Administración
-
 Comprende las operaciones soportadas para proporcionar y gestionar la información relacionada con un usuario/tarjetahabiente/cliente.
 
 ## Consultar las cuentas registradas

@@ -1,6 +1,4 @@
-# Módulo de consultas de productos financieros
-
-En este módulo podrá realizar consultas a los productos financieros (cuentas débito y cuentas crédito) de un usuario.
+Comprende las consultas a los productos financieros (cuentas débito y cuentas crédito) de un usuario.
 
 ## Consulta de productos financieros
 
@@ -66,7 +64,7 @@ El resultado de la consulta será una lista de elementos representados por la en
 
 ![BalanceInfo](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/InquiriesBalancesExample.png?raw=true)
 
-## Consulta de movimientos financieros
+## Consulta de movimientos
 
 Obtiene la información de transacciones finacieras realizadas en una cuenta.
 
