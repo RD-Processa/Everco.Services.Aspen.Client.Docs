@@ -1,6 +1,6 @@
-# DefaultHeadersManager
+# IHeadersManager
 
-Implementa las operaciones necesarias para establecer las cabeceras personalizadas requeridas por el servicio Aspen.
+Define las operaciones necesarias para establecer las cabeceras personalizadas requeridas por el servicio Aspen.
 
 **IHeadersManager.cs**
 
@@ -43,8 +43,7 @@ public interface IHeadersManager
 
 También podria hacer su propia implementación de la interfaz `IHeadersManager` y registrar el uso de su clase así:
 
-**MyRegisterHeadersManager.cs**
-
 ```c#
 ServiceLocator.Instance.RegisterHeadersManager(new MyRegisterHeadersManager());
 ```
+
