@@ -5,65 +5,6 @@ Algunas operaciones en Aspen son resueltas por sistemas externos por lo que la U
 Cada operación expuesta en el cliente, esta asociada con el [método HTTP (verbo)](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods) definido en la parametrización del `endpoint dinámico`. Esta información le será entregada por Evertec, pero al ser una operación __separada__ de Aspen, el cliente simplemente actuará como
 intermediario para enviar la información requerida y procesar los datos de respuesta, manteniendo el mismo manejo del [código de estado HTTP](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) y generando excepciones de tipo [AspenException](AspenException.md) para respuestas [fuera del rango (2xx)](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
 
-## Operaciones disponibles
-
-### GET
-
-Envia una solicitud al servicio Aspen, utilizando el verbo **[Get](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods)**
-
-```c#
-// Invoca el verbo GET en el recurso y serializa la respuesta a un objeto de tipo MyResponse.
-// ResourceName corresponde con el texto a la derecha de la palabra /ext/ en la URL de la documentación que Evertec le entregó.
-// Supongamos que la URL completa entregada es: https://localhost/api/ext/demo/calc, para este ejemplo, ResourceName sería "demo/calc"
-var response = client.Dynamics.Get<MyResponse>("ResourceName");
-```
-
-### POST
-
-Envia una solicitud al servicio Aspen, utilizando el verbo **[Post](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods)**
-
-```c#
-// Invoca el verbo POST en el recurso y serializa la respuesta a un objeto de tipo MyResponse.
-// ResourceName corresponde con el texto a la derecha de la palabra /ext/ en la URL de la documentación que Evertec le entregó.
-// Supongamos que la URL completa entregada es: https://localhost/api/ext/demo/calc, para este ejemplo, ResourceName sería "demo/calc"
-var request = new MyRequest("MyValue1", "MyValue2");
-var response = client.Dynamics.Post<MyRequest, MyResponse>("ResourceName", request);
-```
-
-### PUT
-
-Envia una solicitud al servicio Aspen, utilizando el verbo **[Put](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods)**
-
-```c#
-// Invoca el verbo PUT en el recurso y serializa la respuesta a un objeto de tipo MyResponse.
-// ResourceName corresponde con el texto a la derecha de la palabra /ext/ en la URL de la documentación que Evertec le entregó.
-// Supongamos que la URL completa entregada es: https://localhost/api/ext/demo/calc, para este ejemplo, ResourceName sería "demo/calc"
-var request = new MyRequest("NewValue1", "NewValue2");
-var response = client.Dynamics.Put<MyRequest, MyResponse>("ResourceName", request);
-```
-
-### DELETE
-
-Envia una solicitud al servicio Aspen, utilizando el verbo **[Delete](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods)**
-
-```c#
-// Invoca el verbo DELETE en el recurso y serializa la respuesta a un objeto de tipo MyResponse.
-// ResourceName corresponde con el texto a la derecha de la palabra /ext/ en la URL de la documentación que Evertec le entregó.
-// Supongamos que la URL completa entregada es: https://localhost/api/ext/demo/calc, para este ejemplo, ResourceName sería "demo/calc"
-client.Dynamics.Delete("ResourceName");
-```
-
-## ¿Y cuando el endpoint dinámico tiene parámetros en la URL?
-
-La información entre corchetes en una URL se denomina **segmentos de URL** y aplican solo para operaciones específicas. Cuando aparezcan, deben ser reemplazados por sus valores correspondientes omitiendo los corchetes.
-
-Imaginemos que tenemos un endpoint dinámico con la siguiente URL: `http://localhost/api/ext/demo/value/{value}` y se espera en el segmento `{value}` un valor que permita realizar la operación esperada. Como ejemplo se establecerá el valor: `123` en el segmento: `{value}` y la URL final sería: `http://localhost/api/operation/value/123`
-
-<div class="admonition warning">
-   <p class="first admonition-title">Atención</p>
-   <p class="last">Las operaciones Get, Post, Put y Delete disponibles en el cliente de Aspen, no resuelven los valores esperados en los parámetros de las URLs.</p>
-</div>
-
 ## Veamos un ejemplo
 
 Para describir estas operaciones, supongamos como ejemplo una [operación CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) para una entidad llamada `Person`, cuyas operaciones están expuestas en el `endpoint dinámico` con la URL `https://localhost/api/ext/demo/person`
@@ -90,38 +31,83 @@ public class Person
 }
 ```
 
-### Agregar una persona a través del método POST
+## Operaciones disponibles
 
-Supongamos que para esta operación se requieren los valores de `LastName`, `FirstName` y `Number`. Podríamos invocar la operación así:
+### GET
+
+Envia una solicitud al servicio Aspen, utilizando el verbo **[Get](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods)**
 
 ```c#
+// Invoca el verbo GET en el recurso y serializa la respuesta a un objeto de tipo MyResponse.
+// ResourceName corresponde con el texto a la derecha de la palabra /ext/ en la URL de la documentación que Evertec le entregó.
+// Supongamos que la URL completa entregada es: https://localhost/api/ext/demo/calc, para este ejemplo, ResourceName sería "demo/calc"
+var response = client.Dynamics.Get<MyResponse>("ResourceName");
+
+// Obtener la lista de personas a través del método GET
+// Utilizaremos la sobrecarga que retorna un valor del tipo especificado en el parámetro.
+var response = client.Dynamics.Get<List<Person>>("demo/person");
+
+// Obtener la información de una persona a través del método GET
+// Utilizaremos la sobrecarga que retorna un valor del tipo especificado en el parámetro.
+var response = client.Dynamics.Get<Person>("demo/person/id/000");
+```
+
+### POST
+
+Envia una solicitud al servicio Aspen, utilizando el verbo **[Post](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods)**
+
+```c#
+// Invoca el verbo POST en el recurso y serializa la respuesta a un objeto de tipo MyResponse.
+// ResourceName corresponde con el texto a la derecha de la palabra /ext/ en la URL de la documentación que Evertec le entregó.
+// Supongamos que la URL completa entregada es: https://localhost/api/ext/demo/calc, para este ejemplo, ResourceName sería "demo/calc"
+var request = new MyRequest("MyValue1", "MyValue2");
+var response = client.Dynamics.Post<MyRequest, MyResponse>("ResourceName", request);
+
+// Agregar una persona a través del método POST
 var request = new Person(123, "Juan", "Perez");
+
+// Utilizaremos la sobrecarga que no retorna un valor. En su lugar, esta sobrecarga generaría una excepción del tipo AspenException  si la operación retornará un código diferente a los del grupo (2xx).
 client.Dynamics.Post<Person>("demo/person", request);
 ```
 
-Utilizaremos la sobrecarga que no retorna un valor. En su lugar, esta sobrecarga generaría una excepción del tipo [AspenException](AspenException.md) si la operación retornará un código diferente a los del grupo (2xx).
+### PUT
 
-### Actualizar una persona a través del método PUT
+Envia una solicitud al servicio Aspen, utilizando el verbo **[Put](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods)**
 
 ```c#
+// Invoca el verbo PUT en el recurso y serializa la respuesta a un objeto de tipo MyResponse.
+// ResourceName corresponde con el texto a la derecha de la palabra /ext/ en la URL de la documentación que Evertec le entregó.
+// Supongamos que la URL completa entregada es: https://localhost/api/ext/demo/calc, para este ejemplo, ResourceName sería "demo/calc"
+var request = new MyRequest("NewValue1", "NewValue2");
+var response = client.Dynamics.Put<MyRequest, MyResponse>("ResourceName", request);
+
+// Actualizar una persona a través del método PUT
 var request = new Person(123, "Juanito", "Perez");
+
+// Utilizaremos la sobrecarga que no retorna un valor. En su lugar, esta sobrecarga genera una excepción del tipo AspenException si la operación retornará un código diferente a los del grupo (2xx).
 client.Dynamics.Put<Person>("demo/person", request);
 ```
 
-Utilizaremos la sobrecarga que no retorna un valor. En su lugar, esta sobrecarga genera una excepción del tipo [AspenException](AspenException.md) si la operación retornará un código diferente a los del grupo (2xx).
+### DELETE
 
-### Obtener la lista de personas a través del método GET
-
-```c#
-var response = client.Dynamics.Get<List<Person>>("demo/person");
-```
-
-Utilizaremos la sobrecarga que retorna un valor del tipo especificado en el parámetro.
-
-### Eliminar una persona a través del método DELETE
+Envia una solicitud al servicio Aspen, utilizando el verbo **[Delete](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods)**
 
 ```c#
-client.Dynamics.Delete("demo/person/id/123");
+// Invoca el verbo DELETE en el recurso y serializa la respuesta a un objeto de tipo MyResponse.
+// ResourceName corresponde con el texto a la derecha de la palabra /ext/ en la URL de la documentación que Evertec le entregó.
+// Supongamos que la URL completa entregada es: https://localhost/api/ext/demo/calc, para este ejemplo, ResourceName sería "demo/calc"
+client.Dynamics.Delete("ResourceName");
+
+// Eliminar una persona a través del método DELETE
+
+// Utilizaremos la sobrecarga que no retorna un valor. En su lugar, esta sobrecarga generaría una excepción del tipo AspenException si la operación retornará un código diferente a los del grupo (2xx).
+client.Dynamics.Delete("demo/person/id/000");
 ```
 
-Utilizaremos la sobrecarga que no retorna un valor. En su lugar, esta sobrecarga generaría una excepción del tipo [AspenException](AspenException.md) si la operación retornará un código diferente a los del grupo (2xx).
+## ¿Y cuando el endpoint dinámico tiene parámetros en la URL?
+
+La información entre corchetes en una URL se denomina **segmentos de URL** y aplican solo para operaciones específicas. Cuando aparezcan, deben ser reemplazados por sus valores correspondientes omitiendo los corchetes.
+
+Imaginemos que tenemos un endpoint dinámico con la siguiente URL: `http://localhost/api/ext/demo/value/{value}` y se espera en el segmento `{value}` un valor que permita realizar la operación esperada. Como ejemplo se establecerá el valor: `123` en el segmento: `{value}` y la URL final sería: `http://localhost/api/operation/value/123`
+
+Tenga en cuenta que debería generar la URL (resource) de acuerdo con las especificaciones entregadas por Evertec Colombia.
