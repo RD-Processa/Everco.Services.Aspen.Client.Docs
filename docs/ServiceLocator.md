@@ -19,8 +19,8 @@ El mismo principio aplica para los componentes del sistema que se mencionan en l
 
 | Operación/Método  | Descripción  | Valor predeterminado |
 |:-:|---|:-:|
-| `SetDefaultEndpoint`  | Establece la instancia de configuración que se debe utilizar para el descubrimiento de la Url y el tiempo de espera del servicio Aspen.  | `EnvironmentEndpoint` |
-| `SetDefaultIdentity`  | Establece la instancia de configuración que se debe utilizar para el descubrimiento de las credenciales de conexión que se envían en las cabeceras de autenticación.  | `EnvironmentIdentity` |
+| `SetDefaultEndpoint`  | Establece la instancia de configuración que se debe utilizar para el descubrimiento de la Url y el tiempo de espera del servicio Aspen.  | [`EnvironmentEndpoint`](EnvironmentEndpoint.md) |
+| `SetDefaultIdentity`  | Establece la instancia de configuración que se debe utilizar para el descubrimiento de las credenciales de conexión que se envían en las cabeceras de autenticación.  | [`EnvironmentIdentity`](EnvironmentIdentity.md) |
 | `RegisterEpochGenerator`   | Establece la instancia que se debe utilizar para generar las marcas de tiempo Unix que se requieren en cada petición que se envía al servicio Aspen.  | `UnixEpochGenerator` |
 | `RegisterHeadersManager`  |  Establece la instancia que se debe utilizar para agregar las cabeceras personalizadas requeridas por el servicio Aspen. | `DefaultHeadersManager` |
 | `RegisterJwtJsonSerializer`  | Establece la instancia que se debe utilizar para serializar la información enviada y generada para las solicitudes hacia/desde el servicio Aspen.  | `JsonSerializer` |
