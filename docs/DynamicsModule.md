@@ -67,7 +67,9 @@ client.Delete($”/demo/person/id/123”);
 
 Utilizaremos la sobrecarga que no retorna un valor. En su lugar, esta sobrecarga generaría una excepción del tipo [AspenException](AspenException.md) si la operación retornará un código diferente a los del grupo (2xx).
 
-## GET
+## Operaciones disponibles
+
+### GET
 
 Envia una solicitud al servicio Aspen, utilizando el verbo [Get](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods)
 
@@ -78,7 +80,7 @@ Envia una solicitud al servicio Aspen, utilizando el verbo [Get](https://en.wiki
 var response = client.Dynamics.Get<MyResponse>("ResourceName");
 ```
 
-## POST
+### POST
 
 Envia una solicitud al servicio Aspen, utilizando el verbo [Post](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods)
 
@@ -90,7 +92,7 @@ var request = new MyRequest("MyValue1");
 var response = client.Dynamics.Post<MyRequest,MyResponse>("ResourceName", request);
 ```
 
-## PUT
+### PUT
 
 Envia una solicitud al servicio Aspen, utilizando el verbo [Put](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods)
 
@@ -102,7 +104,7 @@ var request = new MyRequest("MyValue1");
 var response = client.Dynamics.Put<MyRequest,MyResponse>("ResourceName", request);
 ```
 
-## DELETE
+### DELETE
 
 Envia una solicitud al servicio Aspen, utilizando el verbo [Delete](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods)
 
