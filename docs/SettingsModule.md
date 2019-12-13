@@ -2,7 +2,7 @@
 
 Comprende las operaciones soportadas para acceder a las entidades de información relacionadas con parametrización del sistema, como pueden ser los tipos de documentos reconocidos, tipos de transacción, valores de configuración, etc para utilizar en su proyecto/aplicación.
 
-## Tipos de documentos
+## Consultar tipos de documentos
 
 Obtiene la lista de tipos de documento reconocidos por el sistema Aspen.
 
@@ -20,7 +20,7 @@ El resultado de la consulta será una lista de elementos representados por la en
 
 ![DocTypeInfo](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/SettingsDocTypesExample.png?raw=true)
 
-## Operadores de telefonía móvil
+## Consultar operadores de telefonía móvil
 
 Un operador o proveedor de telefonía móvil es una compañía que proporciona servicios para los usuarios de teléfonos móviles. El servicio de Aspen facilita esta información para operaciones de recarga a celular.
 
@@ -38,7 +38,7 @@ El resultado de la consulta será una lista de elementos representados por la en
 
 ![CarrierInfo](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/SettingsCarriersExample.png?raw=true)
 
-## Valores admitidos de recarga por operador
+## Consultar valores de recarga por operador de telefonía móvil
 
 Por cada operador de telefonía configurado, se dispone de los valores permitidos para realizar recargas a celular. Si los valores no se ajustan a los que su proyecto/aplicación requiere, puede solicitar la personalización o configuración de nuevos valores.
 
@@ -56,7 +56,7 @@ El resultado de la consulta será una lista de elementos representados por la en
 
 ![TopUpInfo](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/SettingsTopUpValuesExample.png?raw=true)
 
-## Tipos de transacción
+## Consultar tipos de transacción
 
 Son los tipos de operaciones financieras soportadas para su aplicación.
 
@@ -74,7 +74,7 @@ El resultado de la consulta será una lista de elementos representados por la en
 
 ![TranTypeInfo](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/SettingsTranTypesExample.png?raw=true)
 
-## Tipos de pagos
+## Consultar tipos de pagos
 
 Son los tipos de pagos que se pueden realizar a una cuenta y que están soportados para la aplicación.
 
