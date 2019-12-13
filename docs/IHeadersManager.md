@@ -44,6 +44,6 @@ public interface IHeadersManager
 También podria hacer su propia implementación de la interfaz `IHeadersManager` y registrar el uso de su clase así:
 
 ```c#
-ServiceLocator.Instance.RegisterHeadersManager(new MyRegisterHeadersManager());
+ServiceLocator.Instance.RegisterHeadersManager(new MyHeadersManager());
 ```
 

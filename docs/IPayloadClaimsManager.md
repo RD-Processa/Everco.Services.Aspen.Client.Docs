@@ -21,5 +21,5 @@ public interface IPayloadClaimsManager
 También podria hacer su propia implementación de la interfaz `IPayloadClaimsManager` y registrar el uso de su clase así:
 
 ```c#
-ServiceLocator.Instance.RegisterPayloadClaimsManager(new MyEpochGenerator());
+ServiceLocator.Instance.RegisterPayloadClaimsManager(new MyPayloadClaimsManager());
 ```
