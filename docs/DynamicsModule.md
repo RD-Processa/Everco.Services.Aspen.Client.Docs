@@ -2,8 +2,8 @@
 
 Algunas operaciones en Aspen son resueltas por sistemas externos por lo que la URL de la operación dependerá de un parámetro. Este tipo de operaciones se denominan en Aspen `endpoints dinámicos`. En estos casos el cliente de Aspen no tiene una implementación definida para cada operación; en su lugar expone métodos que se utilizan como __una pasarela de información__ que procesa datos en crudo de entrada y de salida.
 
-Cada operación expuesta en el cliente, esta asociada con el método HTTP (verbo) definido en la parametrización del endpoint dinámico. Esta información le será entregada por Evertec, pero al ser una operación __separada__ de Aspen, el cliente simplemente actuará como
-intermediario para enviar la información requerida y procesar los datos de respuesta, manteniendo el mismo manejo del estado de HTTP y generando excepciones de tipo [AspenException](AspenException.md) para respuestas [fuera del rango (2xx)](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+Cada operación expuesta en el cliente, esta asociada con el [método HTTP (verbo)](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods) definido en la parametrización del `endpoint dinámico`. Esta información le será entregada por Evertec, pero al ser una operación __separada__ de Aspen, el cliente simplemente actuará como
+intermediario para enviar la información requerida y procesar los datos de respuesta, manteniendo el mismo manejo del [código de estado HTTP](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) y generando excepciones de tipo [AspenException](AspenException.md) para respuestas [fuera del rango (2xx)](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
 
 ## Ejemplo general
 
