@@ -1,6 +1,8 @@
+# Módulo de consultas financieras
+
 Comprende las consultas a los productos financieros (cuentas débito y cuentas crédito) de un usuario.
 
-## Consulta de productos financieros
+## Consultar productos financieros
 
 Obtiene la información resumida de las cuentas o productos financieros asociados al usuario especificando por el tipo y número de documento. Cuando el usuario no tiene productos asociados, la respuesta será una lista vacía.
 
@@ -17,7 +19,7 @@ El resultado de la consulta será una lista de elementos representados por la en
 
 ![AccountInfo](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/InquiriesAccountsExample.png?raw=true)
 
-### Propiedades de una cuenta (List&lt;AccountProperty&gt;)
+**Propiedades de una cuenta (List&lt;AccountProperty&gt;)**
 
 Es un conjunto de propiedades o atributos que representan información relevante de la cuenta.
 
@@ -32,7 +34,7 @@ Value | Valor asociado con el atributo.
    <p class="last">El conjunto de propiedades o atributos de una cuenta variará de acuerdo con el sistema de información origen del producto.</p>
 </div>
 
-### Sistemas de información origen
+**Sistemas de información origen**
 
 Proveen la información financiera relacionada con usuarios/tarjetahabientes/clientes. A diciembre de 2019 se tienen habilitados los siguientes sistemas:
 
@@ -41,7 +43,7 @@ Sistema | Descripción
 Tup | El origen de la información es el sistema de administración de tarjetas débito **TUP**.
 Bancor | El origen de la información es el sistema de administración de cartera **BANCOR**.
 
-## Consulta de saldos
+## Consultar saldos
 
 Permite obtener los saldos (balances) detallados de un producto financiero.
 
@@ -51,7 +53,7 @@ string userDocType = "CC";
 string userDocNumber = "0000000000";
 
 // Obtener la lista de cuentas del usuario/tarjetahabiente/cliente
-IList<AccountInfo> accounts = client.Inquiries.GetAccounts(userDocType, userDocNumber);
+var accounts = client.Inquiries.GetAccounts(userDocType, userDocNumber);
 
 // Obtener el saldo de cada cuenta
 foreach (var account in accounts)
@@ -64,7 +66,7 @@ El resultado de la consulta será una lista de elementos representados por la en
 
 ![BalanceInfo](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/InquiriesBalancesExample.png?raw=true)
 
-## Consulta de movimientos
+## Consultar movimientos
 
 Obtiene la información de transacciones finacieras realizadas en una cuenta.
 
@@ -74,7 +76,7 @@ string userDocType = "CC";
 string userDocNumber = "0000000000";
 
 // Obtener la lista de cuentas del usuario/tarjetahabiente/cliente
-IList<AccountInfo> accounts = client.Inquiries.GetAccounts(userDocType, userDocNumber);
+var accounts = client.Inquiries.GetAccounts(userDocType, userDocNumber);
 
 // Obtener los movimientos de cada cuenta
 foreach (var account in accounts)

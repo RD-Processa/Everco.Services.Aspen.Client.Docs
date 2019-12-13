@@ -1,3 +1,5 @@
+# Módulo de configuraciones
+
 Comprende las operaciones soportadas para acceder a las entidades de información relacionadas con parametrización del sistema, como pueden ser los tipos de documentos reconocidos, tipos de transacción, valores de configuración, etc para utilizar en su proyecto/aplicación.
 
 ## Tipos de documentos

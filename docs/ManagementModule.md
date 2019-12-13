@@ -1,6 +1,8 @@
+# Módulo de administración
+
 Comprende las operaciones soportadas para proporcionar y gestionar la información relacionada con un usuario/tarjetahabiente/cliente.
 
-## Consultar las cuentas registradas
+## Consultar cuentas registradas
 
 Obtiene la información de las cuentas registradas por un usuario/tarjetahabiente/cliente para transferencia de saldos.
 
@@ -22,11 +24,11 @@ El resultado de la consulta será una lista de elementos representados por la en
 
 ![Preview](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/ManagementTransferAccountsExample.png?raw=true)
 
-## Registrar una cuenta para transferencias
+## Registrar cuenta para transferencias
 
 Vincula la información de una cuenta de un tarjetahabiente a la lista de cuentas registradas para transferencia de fondos de un usuario.
 
-### Utilizando el número de cuenta a registrar
+**Utilizando el número de cuenta a registrar**
 
 ```c#
 // Información del usuario que registra la cuenta.
@@ -56,7 +58,7 @@ var client = AutonomousApp.Initialize()
 client.Management.LinkTransferAccount(userDocType, userDocNumber, linkTransferAccountInfo);
 ```
 
-### Utilizando el número de documento asociado con la cuenta a registrar
+**Utilizando el número de documento asociado con la cuenta a registrar**
 
 ```c#
 // Información del usuario que registra la cuenta.
@@ -76,9 +78,9 @@ var client = AutonomousApp.Initialize()
 client.Management.LinkTransferAccount(userDocType, userDocNumber, cardHolderDocType, cardHolderDocNumber);
 ``` 
 
-## Eliminar una cuenta registrada
+## Eliminar cuenta registrada
 
-### Utilizando el alias del registro
+**Utilizando el alias del registro**
 
 Desvincula la información de una cuenta de la lista de cuentas registradas para transferencias de un cliente, usando el alias asociado en el momento del registro:
 
@@ -98,11 +100,11 @@ var client = AutonomousApp.Initialize()
   .GetClient();
 
 client.Management.UnlinkTransferAccount(userDocType, userDocNumber, accountAlias);
-```
+``
 
-### Utilizando la información del titular de la cuenta registrada
+**Utilizando la información del titular de la cuenta registrada**
 
-Utilizando el número de documento asociado con la cuenta registrada.
+Desvincula la información de una cuenta de la lista de cuentas registradas para transferencias de un cliente, usando el tipo y número de docuento del titular de la cuenta registrada:
 
 ```c#
 // Información del usuario que registró la cuenta.
