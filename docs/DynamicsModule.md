@@ -40,7 +40,7 @@ var request = new Person(123, “juan”, “perez”);
 client.Post<Person>(request);
 ```
 
-Utilizaremos la sobrecarga que no retorna un valor. En su lugar, esta sobrecarga genera una excepción del tipo [AspenException](AspenException.md) si la operación retornará un código diferente a los del grupo (2xx).
+Utilizaremos la sobrecarga que no retorna un valor. En su lugar, esta sobrecarga generaría una excepción del tipo [AspenException](AspenException.md) si la operación retornará un código diferente a los del grupo (2xx).
 
 ### Actualizar una persona a través del método PUT
 
@@ -65,7 +65,7 @@ Utilizaremos la sobrecarga que retorna un valor del tipo especificado en el par�
 client.Delete($”/demo/person/id/123”);
 ```
 
-Utilizaremos la sobrecarga que no retorna un valor. En su lugar, esta sobrecarga genera una excepción del tipo [AspenException](AspenException.md) si la operación retornará un código diferente a los del grupo (2xx).
+Utilizaremos la sobrecarga que no retorna un valor. En su lugar, esta sobrecarga generaría una excepción del tipo [AspenException](AspenException.md) si la operación retornará un código diferente a los del grupo (2xx).
 
 ## GET
 
