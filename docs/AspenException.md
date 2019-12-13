@@ -1,8 +1,8 @@
 # Control de errores
 
-El cliente de Aspen, está preparado para propagar una excepción de tipo: `AspenException` cuando se recibe una respuesta fuera del rango de códigos de estado HTTP `2xx` desde el API del servicio. Esta clase se asegura de recopilar y proporcionar la información relevante de la respuesta HTTP.
+El cliente de Aspen, está preparado para propagar una excepción del tipo `AspenException` cuando se recibe una respuesta fuera del rango de códigos de estado HTTP `2xx` desde el API del servicio. Esta clase se asegura de recopilar y proporcionar la información relevante de la respuesta HTTP.
 
-Imaginemos con el siguiente ejemplo donde se intenta inicializar una instancia del cliente usando un **ApiKey** y un **ApiSecret** de un programa/aplicación desconocida.
+Imaginemos el siguiente ejemplo, donde se intenta inicializar una instancia del cliente usando un **ApiKey** y un **ApiSecret** de un programa/aplicación desconocida.
 
 ```c#
 try{
