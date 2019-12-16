@@ -45,7 +45,10 @@ Para obtener una instancia de la clase que representa la conexión con el servic
 
 A través de la variable `client` podrá acceder a los módulos del servicio Aspen como veremos más adelante.
 
-> Nota: Mantenga una única referencia a la variable `client` en su programa. No es necesario inicializar el cliente en diferentes puntos de su aplicación. El token de autenticación será guardado en una cache interna del cliente, por lo que no se necesita inicializar múltiples veces esta clase. Los ejemplos en adelante asumen que el cliente ya ha sido inicializado y se tiene acceso a la variable `client`
+<div class="admonition info">
+<p class="first admonition-title">Atención</p>
+<p>Mantenga una única referencia a la variable <code>client</code> en su programa. No es necesario inicializar el cliente en diferentes puntos de su aplicación. El token de autenticación será guardado en una cache interna del cliente, por lo que no se necesita inicializar múltiples veces esta clase. Los ejemplos en adelante asumen que el cliente ya ha sido inicializado y se tiene acceso a la variable <code>client</code></p>
+</div>
 
 ```c#
 
