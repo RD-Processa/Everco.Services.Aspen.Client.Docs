@@ -96,4 +96,4 @@ client.Management.UnlinkTransferAccount(userDocType, userDocNumber, cardHolderDo
 
 ## Vea también
 
-- [Conectar con Aspen](ManageApiKey.md/#obtener-una-instancia-del-servicio)
+- [Conectar con Aspen](ManageApiKey.md#obtener-una-instancia-del-servicio)

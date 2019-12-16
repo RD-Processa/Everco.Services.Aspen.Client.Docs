@@ -64,4 +64,4 @@ El resultado de la consulta será una lista de elementos representados por la en
 
 ## Vea también
 
-- [Conectar con Aspen](ManageApiKey.md/#obtener-una-instancia-del-servicio)
+- [Conectar con Aspen](ManageApiKey.md#obtener-una-instancia-del-servicio)

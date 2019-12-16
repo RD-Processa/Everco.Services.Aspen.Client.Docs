@@ -36,4 +36,4 @@ Accediendo a la variable `exception` podrá obtener los detalles del problema, a
 
 ## Vea también
 
-- [Conectar con Aspen](ManageApiKey.md/#obtener-una-instancia-del-servicio)
+- [Conectar con Aspen](ManageApiKey.md#obtener-una-instancia-del-servicio)
