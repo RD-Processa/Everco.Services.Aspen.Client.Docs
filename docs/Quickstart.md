@@ -26,7 +26,6 @@ El cliente de Aspen admite la personalización de opciones comúnmente utilizada
 
 ### ¿Como luce el código para conectar con el servicio Aspen?
 
-
 ```c#
 
 // Este código se debería ejecutar una sola vez y conservar la referencia a la instancia del cliente.

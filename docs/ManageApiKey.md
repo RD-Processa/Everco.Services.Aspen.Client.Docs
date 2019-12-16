@@ -43,14 +43,18 @@ El cliente de Aspen define la interfaz IAppIdentity e implementa las clases [Env
 
 Para obtener una instancia de la clase que representa la conexión con el servicio Aspen, basta con invocar el método `GetClient()`. El cliente de Aspen se encargará de solicitar un token de autenticación con las credenciales proporcionadas y lo almacenará en una Cache interna para su uso posterior.
 
+A través de la variable `client` podrá acceder a los módulos del servicio Aspen como veremos más adelante.
+
+> Nota: Mantenga una única referencia a la variable `client` en su programa. No es necesario inicializar el cliente en diferentes puntos de su aplicación. El token de autenticación será guardado en una cache interna del cliente, por lo que no se necesita inicializar múltiples veces esta clase. Los ejemplos en adelante asumen que el cliente ya ha sido inicializado y se tiene acceso a la variable `client`
+
 ```c#
+
 var client = AutonomousApp.Initialize()
    .WithDefaults()
    .Authenticate()
    .GetClient();
 ```
 
-A través de la variable `client` podrá acceder a los módulos del servicio Aspen como veremos más adelante.
 
 ![IntelliSense](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/IntelliSense.png?raw=true)
 
@@ -75,6 +79,7 @@ Cuando se crea una instancia del cliente utilizando la sintaxis anterior, el cli
 Al ignorar los valores del token de autenticación almacenado en memoria, el cliente de Aspen solicitará nuevos tokens de autenticación por cada operación que requiera su proyecto/aplicación, pero esto debe ser un factor de rendimiento para poner en consideración. El método `AuthenticateNoCache` es el que debe utilizar si toma la decisión de ignorar el token de autenticación en cache \(**no recomendado**\).
 
 ```c#
+// No recomendado
 var client = AutonomousApp.Initialize()
    .WithDefaults()
    .AuthenticateNoCache()

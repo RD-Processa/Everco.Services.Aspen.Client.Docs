@@ -7,12 +7,6 @@ Comprende las operaciones soportadas para proporcionar y gestionar la informaci�
 Obtiene la información de las cuentas registradas por un usuario/tarjetahabiente/cliente para transferencia de saldos.
 
 ```c#
-// Este código se debería ejecutar una sola vez y conservar la referencia a la instancia del cliente.
-var client = AutonomousApp.Initialize()
-  .WithDefaults()
-  .Authenticate()
-  .GetClient();
-
 // Información del usuario/tarjetahabiente/cliente que se desea consultar.
 string userDocType = "CC";
 string userDocNumber = "0000000000";
@@ -49,12 +43,6 @@ var linkTransferAccountInfo = new LinkTransferAccountInfo(
   accountAlias,
   accountNumber);
 
-// Este código se debería ejecutar una sola vez y conservar la referencia a la instancia del cliente.
-var client = AutonomousApp.Initialize()
-  .WithDefaults()
-  .Authenticate()
-  .GetClient();
-
 client.Management.LinkTransferAccount(userDocType, userDocNumber, linkTransferAccountInfo);
 ```
 
@@ -68,12 +56,6 @@ string userDocNumber = "0000000000";
 // Información del usuario/cuenta que se desea registrar.
 string cardHolderDocType = "CC";
 string cardHolderDocNumber = "0000000001";
-
-// Este código se debería ejecutar una sola vez y conservar la referencia a la instancia del cliente.
-var client = AutonomousApp.Initialize()
-  .WithDefaults()
-  .Authenticate()
-  .GetClient();
 
 client.Management.LinkTransferAccount(userDocType, userDocNumber, cardHolderDocType, cardHolderDocNumber);
 ``` 
@@ -93,12 +75,6 @@ string accountAlias = "Luke Marshall";
 string userDocType = "CC";
 string userDocNumber = "0000000000";
 
-// Este código se debería ejecutar una sola vez y conservar la referencia a la instancia del cliente.
-var client = AutonomousApp.Initialize()
-  .WithDefaults()
-  .Authenticate()
-  .GetClient();
-
 client.Management.UnlinkTransferAccount(userDocType, userDocNumber, accountAlias);
 ``
 
@@ -114,12 +90,6 @@ string userDocNumber = "0000000000";
 // Información del usuario/cuenta que se registró.
 string cardHolderDocType = "CC";
 string cardHolderDocNumber = "0000000001";
-
-// Este código se debería ejecutar una sola vez y conservar la referencia a la instancia del cliente.
-var client = AutonomousApp.Initialize()
-  .WithDefaults()
-  .Authenticate()
-  .GetClient();
 
 client.Management.UnlinkTransferAccount(userDocType, userDocNumber, cardHolderDocType, cardHolderDocNumber);
 ```
