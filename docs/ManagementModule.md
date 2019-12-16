@@ -76,7 +76,7 @@ string userDocType = "CC";
 string userDocNumber = "0000000000";
 
 client.Management.UnlinkTransferAccount(userDocType, userDocNumber, accountAlias);
-``
+```
 
 **Utilizando la información del titular de la cuenta registrada**
 
