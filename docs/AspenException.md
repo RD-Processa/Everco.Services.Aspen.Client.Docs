@@ -33,3 +33,7 @@ Accediendo a la variable `exception` podrá obtener los detalles del problema, a
 | **DumpLink** | El enlace de la traza de seguimiento de la solicitud. Durante el procesamiento de una solicitud al API de Aspen, se escriben trazas de seguimiento como las entradas recibidas y comportamientos esperados que permitirán verificar la respuesta generada por el servicio. Esta información podría no estar disponible si las trazas están deshabilitadas en el servidor que aloja el API de Aspen. |
 
 ![AspenException](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/AspenException.png?raw=true)
+
+## Vea también
+
+- [Conectar con Aspen](ManageApiKey.md/#obtener-una-instancia-del-servicio)

@@ -94,3 +94,7 @@ foreach (var account in accounts)
 El resultado de la consulta será una lista de elementos representados por la entidad `MiniStatementInfo` asi:
 
 ![MiniStatementInfo](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/InquiriesStatementsExample.png?raw=true)
+
+## Vea también
+
+- [Conectar con Aspen](ManageApiKey.md/#obtener-una-instancia-del-servicio)

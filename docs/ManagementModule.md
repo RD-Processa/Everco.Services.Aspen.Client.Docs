@@ -93,3 +93,7 @@ string cardHolderDocNumber = "0000000001";
 
 client.Management.UnlinkTransferAccount(userDocType, userDocNumber, cardHolderDocType, cardHolderDocNumber);
 ```
+
+## Vea también
+
+- [Conectar con Aspen](ManageApiKey.md/#obtener-una-instancia-del-servicio)

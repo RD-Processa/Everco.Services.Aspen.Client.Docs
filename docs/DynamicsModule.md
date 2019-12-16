@@ -111,3 +111,7 @@ La información entre corchetes en una URL se denomina **segmentos de URL** y ap
 Imaginemos que tenemos un endpoint dinámico con la siguiente URL: `http://localhost/api/ext/demo/value/{value}` y se espera en el segmento `{value}` un valor que permita realizar la operación esperada. Como ejemplo se establecerá el valor: `123` en el segmento: `{value}` y la URL final sería: `http://localhost/api/operation/value/123`
 
 Tenga en cuenta que debería generar la URL (resource) de acuerdo con las especificaciones entregadas por Evertec Colombia.
+
+## Vea también
+
+- [Conectar con Aspen](ManageApiKey.md/#obtener-una-instancia-del-servicio)

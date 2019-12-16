@@ -61,3 +61,7 @@ client.Settings.GetPaymentTypes();
 El resultado de la consulta será una lista de elementos representados por la entidad `PaymentTypeInfo` asi:
 
 ![PaymentTypeInfo](https://github.com/RD-Processa/Everco.Services.Aspen.Client.Docs/blob/master/images/SettingsPaymentTypesExample.png?raw=true)
+
+## Vea también
+
+- [Conectar con Aspen](ManageApiKey.md/#obtener-una-instancia-del-servicio)
