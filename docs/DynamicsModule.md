@@ -114,4 +114,4 @@ Tenga en cuenta que debería generar la URL (resource) de acuerdo con las especi
 
 ## Vea también
 
-- [Conectar con Aspen](ManageApiKey.md/#obtener-una-instancia-del-servicio)
+- [Conectar con Aspen](ManageApiKey/#obtener-una-instancia-del-servicio)
