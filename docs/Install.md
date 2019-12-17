@@ -14,4 +14,4 @@ Install-Package -Name 'Everco.Services.Aspen.Client'
 
 ## Requisitos mínimos
 
-El cliente de ASPEN está construido con `.NET Core 3.0` y está sujeto a los requisitos mínimos descritos en: **[.NET Core dependencies and requirements](https://docs.microsoft.com/en-us/dotnet/core/install/dependencies?tabs=netcore30&pivots=os-windows)**
+El cliente de ASPEN está construido con `.NET Standard 2.0` Por lo que puede ser utilizado en aplicaciones compiladas para .NET Core 2.0 o superior y .NET Framework 4.6.1 o superior como se describe en **[.NET Standard Versions](https://github.com/dotnet/standard/blob/master/docs/versions.md)**
