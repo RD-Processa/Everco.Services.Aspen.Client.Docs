@@ -10,7 +10,14 @@ Install-Package -Name 'Everco.Services.Aspen.Client'
 
 **.NETStandard 2.0**:
 
-- [Everco.Services.Aspen.Entities](https://www.nuget.org/packages/Everco.Services.Aspen.Entities)
+- [Everco.Services.Aspen.Client.Identity](https://www.nuget.org/packages/Everco.Services.Aspen.Client.Identity/)
+- [Everco.Services.Aspen.Entities](https://www.nuget.org/packages/Everco.Services.Aspen.Entities/)
+- [JWT](https://www.nuget.org/packages/JWT)
+- [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/)
+- [RestSharp](https://www.nuget.org/packages/RestSharp/)
+- [SimpleInjector](https://www.nuget.org/packages/SimpleInjector/)
+- [System.Management](https://www.nuget.org/packages/System.Management/)
+
 
 ## Requisitos mínimos
 
